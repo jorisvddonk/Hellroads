@@ -1,0 +1,14 @@
+// Keysections
+addKeySection "Hellroads" "Hellroads"
+addMenuKey    "Move left"                 "+hlr_moveleft"
+addMenuKey    "Move right"                 "+hlr_moveright"
+addMenuKey    "Jump"                 "hlr_jump"
+
+// Keys
+alias +hlr_moveleft "netevent HLR_MoveLeft 1;"
+alias -hlr_moveleft "netevent HLR_MoveLeft 0;"
+
+alias +hlr_moveright "netevent HLR_MoveRight 1;"
+alias -hlr_moveright "netevent HLR_MoveRight 0;"
+
+alias hlr_jump "netevent HLR_Jump;"

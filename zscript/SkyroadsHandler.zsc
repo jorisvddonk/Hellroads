@@ -1,57 +1,32 @@
  class Skyroadshandler : EventHandler
  {
-   override bool InputProcess(InputEvent e) {
-    if (e.KeyScan == 35) {
-      if (e.Type == InputEvent.Type_KeyDown) {
-        EventHandler.SendNetworkEvent("moveRight", true);
-      } else {
-        EventHandler.SendNetworkEvent("moveRight", false);
-      }
-      return true;
-    }
-    if (e.KeyScan == 33) {
-      if (e.Type == InputEvent.Type_KeyDown) {
-        EventHandler.SendNetworkEvent("moveLeft", true);
-      } else {
-        EventHandler.SendNetworkEvent("moveLeft", false);
-      }
-      return true;
-    }
-    if (e.KeyScan == 20) {
-      if (e.Type == InputEvent.Type_KeyDown) {
-        EventHandler.SendNetworkEvent("jump");
-      }
-      return true;
-    }
-    return false;
-   }
-
    override void NetworkProcess (ConsoleEvent e)
    {
      let player = players [e.Player].mo;
 
-    if (e.Name == "moveLeft") {
-      ThinkerIterator t = ThinkerIterator.Create("Ship");
-      Ship d;
-      while (d = Ship(t.Next())) {
-        d.mLeft(e.Args[0]);
+      if (e.Name == "HLR_MoveLeft") {
+        ThinkerIterator t = ThinkerIterator.Create("Ship");
+        Ship d;
+        while (d = Ship(t.Next())) {
+          d.mLeft(e.Args[0]);
+        }
       }
-    }
-    if (e.Name == "moveRight") {
-      ThinkerIterator t = ThinkerIterator.Create("Ship");
-      Ship d;
-      while (d = Ship(t.Next())) {
-        d.mRight(e.Args[0]);
+      
+      if (e.Name == "HLR_MoveRight") {
+        ThinkerIterator t = ThinkerIterator.Create("Ship");
+        Ship d;
+        while (d = Ship(t.Next())) {
+          d.mRight(e.Args[0]);
+        }
       }
-    }
 
-
-    if (e.Name == "jump") {
-      ThinkerIterator t = ThinkerIterator.Create("Ship");
-      Ship d;
-      while (d = Ship(t.Next())) {
-        d.jump();
+      if (e.Name == "HLR_Jump") {
+        ThinkerIterator t = ThinkerIterator.Create("Ship");
+        Ship d;
+        while (d = Ship(t.Next())) {
+          d.jump();
+        }
       }
-    }
+
    }
  }
