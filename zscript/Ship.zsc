@@ -1,9 +1,13 @@
 class Ship : Actor {
   bool falling;
   Vector2 movement;
+  float throttle;
+  float throttleDelta;
   int forwardAngle;
   bool movingLeft;
   bool movingRight;
+  bool throttleIncreasing;
+  bool throttleDecreasing;
 
   Default {
     +NOGRAVITY;
@@ -24,10 +28,14 @@ class Ship : Actor {
 
   override void PostBeginPlay() {
     movement = (0,0);
+    throttle = 0.0;
+    throttleDelta = 0.0;
     falling = true;
     forwardAngle = angle;
     movingLeft = false;
     movingRight = false;
+    throttleIncreasing = false;
+    throttleDecreasing = false;
   }
 
   void mLeft(bool a) {
@@ -37,6 +45,14 @@ class Ship : Actor {
   void mRight(bool a) {
     movingRight = a;
     setMovement();
+  }
+  void throttleInc(bool a) {
+    throttleIncreasing = a;
+    setThrottle();
+  }
+  void throttleDec(bool a) {
+    throttleDecreasing = a;
+    setThrottle();
   }
 
   void setMovement() {
@@ -50,6 +66,17 @@ class Ship : Actor {
     movement = (xspd, movement.y);
   }
 
+  void setThrottle() {
+    float throttle = 0;
+    if (throttleIncreasing) {
+      throttle += 3;
+    }
+    if (throttleDecreasing) {
+      throttle -= 3;
+    }
+    throttleDelta = throttle;
+  }
+
   void jump() {
     if (falling == false) {
       movement = (movement.x, -8.0);
@@ -59,6 +86,17 @@ class Ship : Actor {
 
   override void Tick() {
     Super.Tick();
+
+    throttle = throttle + throttleDelta;
+    if (throttle > 100) {
+      throttle = 100;
+    }
+    if (throttle < 0) {
+      throttle = 0;
+    }
+
+    // Console.Printf("Throttle: %f, ThrottleDelta: %f", throttle, throttleDelta);
+
     if (falling) {
       movement = (movement.x, movement.y + 0.8);
     }
@@ -80,6 +118,6 @@ class Ship : Actor {
       }
     }
 
-    SetXYZ((pos.x - (Sin(forwardAngle) * movement.x), pos.y - (Cos(forwardAngle) * movement.x), pos.z - movement.y));
+    SetXYZ((pos.x - (Sin(forwardAngle) * movement.x) + (Cos(forwardAngle) * throttle / 20), pos.y - (Cos(forwardAngle) * movement.x), pos.z - movement.y));
   }
 }

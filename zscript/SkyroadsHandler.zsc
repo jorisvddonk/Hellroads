@@ -4,7 +4,7 @@
    {
      let player = players [e.Player].mo;
 
-      if (e.Name == "HLR_MoveLeft") {
+      if (e.Name == "hlr_moveleft") {
         ThinkerIterator t = ThinkerIterator.Create("Ship");
         Ship d;
         while (d = Ship(t.Next())) {
@@ -12,7 +12,7 @@
         }
       }
       
-      if (e.Name == "HLR_MoveRight") {
+      if (e.Name == "hlr_moveright") {
         ThinkerIterator t = ThinkerIterator.Create("Ship");
         Ship d;
         while (d = Ship(t.Next())) {
@@ -20,7 +20,23 @@
         }
       }
 
-      if (e.Name == "HLR_Jump") {
+      if (e.Name == "hlr_throttle_increase") {
+        ThinkerIterator t = ThinkerIterator.Create("Ship");
+        Ship d;
+        while (d = Ship(t.Next())) {
+          d.throttleInc(e.Args[0]);
+        }
+      }
+
+      if (e.Name == "hlr_throttle_decrease") {
+        ThinkerIterator t = ThinkerIterator.Create("Ship");
+        Ship d;
+        while (d = Ship(t.Next())) {
+          d.throttleDec(e.Args[0]);
+        }
+      }
+
+      if (e.Name == "hlr_jump") {
         ThinkerIterator t = ThinkerIterator.Create("Ship");
         Ship d;
         while (d = Ship(t.Next())) {

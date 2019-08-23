@@ -3,12 +3,20 @@ addKeySection "Hellroads" "Hellroads"
 addMenuKey    "Move left"                 "+hlr_moveleft"
 addMenuKey    "Move right"                 "+hlr_moveright"
 addMenuKey    "Jump"                 "hlr_jump"
+addMenuKey    "Throttle increase"                 "+hlr_throttle_increase"
+addMenuKey    "Throttle decrease"                 "+hlr_throttle_decrease"
 
 // Keys
-alias +hlr_moveleft "netevent HLR_MoveLeft 1;"
-alias -hlr_moveleft "netevent HLR_MoveLeft 0;"
+alias +hlr_moveleft "netevent hlr_moveleft 1;"
+alias -hlr_moveleft "netevent hlr_moveleft 0;"
 
-alias +hlr_moveright "netevent HLR_MoveRight 1;"
-alias -hlr_moveright "netevent HLR_MoveRight 0;"
+alias +hlr_moveright "netevent hlr_moveright 1;"
+alias -hlr_moveright "netevent hlr_moveright 0;"
 
-alias hlr_jump "netevent HLR_Jump;"
+alias hlr_jump "netevent hlr_jump;"
+
+alias +hlr_throttle_increase "netevent hlr_throttle_increase 1;"
+alias -hlr_throttle_increase "netevent hlr_throttle_increase 0;"
+
+alias +hlr_throttle_decrease "netevent hlr_throttle_decrease 1;"
+alias -hlr_throttle_decrease "netevent hlr_throttle_decrease 0;"
