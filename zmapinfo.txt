@@ -1,0 +1,9 @@
+GameInfo
+{
+	AddEventHandlers = "SkyroadsHandler"
+}
+
+DoomEdNums
+{
+  31640 = Ship
+}

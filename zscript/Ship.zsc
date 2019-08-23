@@ -1,0 +1,85 @@
+class Ship : Actor {
+  bool falling;
+  Vector2 movement;
+  int forwardAngle;
+  bool movingLeft;
+  bool movingRight;
+
+  Default {
+    +NOGRAVITY;
+    +NOCLIP;
+  }
+
+  States {
+    Spawn:
+      Goto Ready;
+      stop;
+    Ready:
+      SKYA A 3;
+      SKYA B 3;
+      SKYA C 3;
+      SKYA D 3;
+      loop;
+  }
+
+  override void PostBeginPlay() {
+    movement = (0,0);
+    falling = true;
+    forwardAngle = angle;
+    movingLeft = false;
+    movingRight = false;
+  }
+
+  void mLeft(bool a) {
+    movingLeft = a;
+    setMovement();
+  }
+  void mRight(bool a) {
+    movingRight = a;
+    setMovement();
+  }
+
+  void setMovement() {
+    float xspd = 0;
+    if (movingLeft) {
+      xspd -= 3;
+    }
+    if (movingRight) {
+      xspd += 3;
+    }
+    movement = (xspd, movement.y);
+  }
+
+  void jump() {
+    if (falling == false) {
+      movement = (movement.x, -8.0);
+      falling = true;
+    }
+  }
+
+  override void Tick() {
+    Super.Tick();
+    if (falling) {
+      movement = (movement.x, movement.y + 0.8);
+    }
+
+    FLineTraceData RemoteRay;
+    LineTrace(
+      forwardAngle,
+      2048,
+      90,
+      data: RemoteRay
+    );
+    if (RemoteRay.HitType == TRACE_HitFloor)
+    {
+      float zoffset = pos.z - RemoteRay.HitLocation.z;
+      if (zoffset < movement.y) {
+        movement = (movement.x, 0);
+        SetXYZ((pos.x, pos.y, RemoteRay.HitLocation.z));
+        falling = false;
+      }
+    }
+
+    SetXYZ((pos.x - (Sin(forwardAngle) * movement.x), pos.y - (Cos(forwardAngle) * movement.x), pos.z - movement.y));
+  }
+}

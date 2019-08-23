@@ -1,0 +1,16 @@
+Sprite SKYAA0, 28, 13 {
+  Offset 14, 13
+  Patch SKYAA0, 0, 0
+}
+Sprite SKYAB0, 28, 13 {
+  Offset 14, 13
+  Patch SKYAB0, 0, 0
+}
+Sprite SKYAC0, 28, 13 {
+  Offset 14, 13
+  Patch SKYAC0, 0, 0
+}
+Sprite SKYAD0, 28, 13 {
+  Offset 14, 13
+  Patch SKYAD0, 0, 0
+}
