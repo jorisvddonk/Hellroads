@@ -118,6 +118,9 @@ class Ship : Actor {
       }
     }
 
-    SetXYZ((pos.x - (Sin(forwardAngle) * movement.x) + (Cos(forwardAngle) * throttle / 20), pos.y - (Cos(forwardAngle) * movement.x), pos.z - movement.y));
+    SetXYZ((pos.x - (Sin(forwardAngle) * movement.x) + (Cos(forwardAngle) * throttle / 20), pos.y - (Cos(forwardAngle) * movement.x) + (Sin(forwardAngle) * throttle / 20), pos.z - movement.y));
+
+    
+
   }
 }
