@@ -120,7 +120,14 @@ class Ship : Actor {
 
     SetXYZ((pos.x - (Sin(forwardAngle) * movement.x) + (Cos(forwardAngle) * throttle / 20), pos.y - (Cos(forwardAngle) * movement.x) + (Sin(forwardAngle) * throttle / 20), pos.z - movement.y));
 
-    
+    PlayerInfo p = players[consoleplayer];
+    // TODO: move these flags to player class?
+    p.mo.bNOGRAVITY = true;
+    p.mo.bNOCLIP = true;
+    p.mo.bSOLID = false;
+    p.mo.bDROPOFF = false;
+    p.mo.MaxStepHeight = 0;
+    p.mo.SetXYZ((pos.x - (Cos(forwardAngle) * 300), pos.y - (Sin(forwardAngle) * 300), 0));
 
   }
 }
