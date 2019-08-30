@@ -100,15 +100,31 @@ class Ship : Actor {
       movement = (movement.x, movement.y + 0.8);
     }
 
+    bool hitFront = pos.z - self.getZAt(20, 0) < -10;
+    bool hitLeft = pos.z - self.getZAt(0, -20) < -10;
+    bool hitRight = pos.z - self.getZAt(0, 20) < -10;
+
     float hitz = self.GetZAt(0, 0);
-      
+    hitz = max(hitz, self.GetZAt(-20, 0));
+    hitz = max(hitz, self.GetZAt(20, 0));
+    hitz = max(hitz, self.GetZAt(0, -20));
+    hitz = max(hitz, self.GetZAt(0, 20));
+
     float zoffset = pos.z - hitz; //pos.z - RemoteRay.HitLocation.z;
-    Console.Printf("%f : %f // %f    %f", hitz, pos.z, zoffset, movement.y);
-    if (zoffset < -10) {
-      // TODO: check if too fast -> explode!!
-      movement = (0, 0);
-      throttle = -100; // move backwards. maybe not such a good idea, but perhaps useful for now
-    } else if (zoffset < movement.y) {
+
+    if (hitFront) {
+      throttle = 0;
+    }
+
+    if (hitLeft) {
+      movement = (max(0, movement.x), 0);
+    }
+
+    if (hitRight) {
+      movement = (min(0, movement.x), 0);
+    }
+
+    if (zoffset < -10) {} else if (zoffset < movement.y) {
       movement = (movement.x, 0);
       SetXYZ((pos.x, pos.y, hitz));
       falling = false;
