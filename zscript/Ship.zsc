@@ -8,6 +8,7 @@ class Ship : Actor {
   bool movingRight;
   bool throttleIncreasing;
   bool throttleDecreasing;
+  Vector3 initialPosition;
 
   Default {
     +NOGRAVITY;
@@ -26,6 +27,7 @@ class Ship : Actor {
   }
 
   override void PostBeginPlay() {
+    initialPosition = self.pos;
     movement = (0,0);
     throttle = 0.0;
     throttleDelta = 0.0;
@@ -83,6 +85,11 @@ class Ship : Actor {
     }
   }
 
+  void kaboom() {
+    Actor ship = Spawn("Ship", self.initialPosition);
+    self.Destroy();
+  }
+
   override void Tick() {
     Super.Tick();
 
@@ -130,6 +137,10 @@ class Ship : Actor {
       falling = false;
     } else if (zoffset > 0.1) {
       falling = true;
+    }
+
+    if (self.pos.z < -50) {
+      self.kaboom();
     }
 
     SetOrigin((pos.x + (Sin(forwardAngle) * movement.x) + (Cos(forwardAngle) * throttle / 20), pos.y - (Cos(forwardAngle) * movement.x) + (Sin(forwardAngle) * throttle / 20), pos.z - movement.y), true);
