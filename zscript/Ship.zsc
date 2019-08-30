@@ -100,25 +100,20 @@ class Ship : Actor {
       movement = (movement.x, movement.y + 0.8);
     }
 
-    FLineTraceData RemoteRay;
-    bool b = false;
-    b = self.LineTrace(
-      angle,
-      256,
-      90,
-      TRF_THRUACTORS | TRF_NOSKY,
-      offsetz: 0.3,
-      data: RemoteRay
-    );
-    if (b && RemoteRay.HitType == TRACE_HitFloor)
-    {
-      float zoffset = pos.z - RemoteRay.HitLocation.z;
-      // Console.Printf("%f", RemoteRay.HitLocation.z);
-      if (zoffset < movement.y) {
-        movement = (movement.x, 0);
-        SetXYZ((pos.x, pos.y, RemoteRay.HitLocation.z));
-        falling = false;
-      }
+    float hitz = self.GetZAt(0, 0);
+      
+    float zoffset = pos.z - hitz; //pos.z - RemoteRay.HitLocation.z;
+    Console.Printf("%f : %f // %f    %f", hitz, pos.z, zoffset, movement.y);
+    if (zoffset < -10) {
+      // TODO: check if too fast -> explode!!
+      movement = (0, 0);
+      throttle = -100; // move backwards. maybe not such a good idea, but perhaps useful for now
+    } else if (zoffset < movement.y) {
+      movement = (movement.x, 0);
+      SetXYZ((pos.x, pos.y, hitz));
+      falling = false;
+    } else if (zoffset > 0.1) {
+      falling = true;
     }
 
     SetXYZ((pos.x + (Sin(forwardAngle) * movement.x) + (Cos(forwardAngle) * throttle / 20), pos.y - (Cos(forwardAngle) * movement.x) + (Sin(forwardAngle) * throttle / 20), pos.z - movement.y));
