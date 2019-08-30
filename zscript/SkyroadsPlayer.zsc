@@ -9,4 +9,9 @@ Class SkyroadsPlayer : Doomplayer
     +DROPOFF;
     MaxStepHeight 0;
   }
+
+  override void PostBeginPlay() {
+    Super.PostBeginPlay();
+    Spawn("Ship", pos, NO_REPLACE);
+  }
 }
