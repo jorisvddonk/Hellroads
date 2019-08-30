@@ -124,17 +124,17 @@ class Ship : Actor {
       movement = (min(0, movement.x), 0);
     }
 
-    if (zoffset < -10) {} else if (zoffset < movement.y) {
+    if (zoffset > -10 && zoffset < movement.y) {
       movement = (movement.x, 0);
-      SetXYZ((pos.x, pos.y, hitz));
+      SetOrigin((pos.x, pos.y, hitz), true);
       falling = false;
     } else if (zoffset > 0.1) {
       falling = true;
     }
 
-    SetXYZ((pos.x + (Sin(forwardAngle) * movement.x) + (Cos(forwardAngle) * throttle / 20), pos.y - (Cos(forwardAngle) * movement.x) + (Sin(forwardAngle) * throttle / 20), pos.z - movement.y));
+    SetOrigin((pos.x + (Sin(forwardAngle) * movement.x) + (Cos(forwardAngle) * throttle / 20), pos.y - (Cos(forwardAngle) * movement.x) + (Sin(forwardAngle) * throttle / 20), pos.z - movement.y), true);
 
     PlayerInfo p = players[consoleplayer];
-    p.mo.SetXYZ((pos.x - (Cos(forwardAngle) * 200), pos.y - (Sin(forwardAngle) * 200), 0));
+    p.mo.SetOrigin((pos.x - (Cos(forwardAngle) * 200), pos.y - (Sin(forwardAngle) * 200), 0), true);
   }
 }
