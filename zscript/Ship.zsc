@@ -11,7 +11,6 @@ class Ship : Actor {
 
   Default {
     +NOGRAVITY;
-    +NOCLIP;
   }
 
   States {
@@ -79,7 +78,7 @@ class Ship : Actor {
 
   void jump() {
     if (falling == false) {
-      movement = (movement.x, -8.0);
+      movement = (movement.x, -15.0);
       falling = true;
     }
   }
@@ -102,15 +101,19 @@ class Ship : Actor {
     }
 
     FLineTraceData RemoteRay;
-    LineTrace(
-      forwardAngle,
-      2048,
+    bool b = false;
+    b = self.LineTrace(
+      angle,
+      256,
       90,
+      TRF_THRUACTORS | TRF_NOSKY,
+      offsetz: 0.3,
       data: RemoteRay
     );
-    if (RemoteRay.HitType == TRACE_HitFloor)
+    if (b && RemoteRay.HitType == TRACE_HitFloor)
     {
       float zoffset = pos.z - RemoteRay.HitLocation.z;
+      // Console.Printf("%f", RemoteRay.HitLocation.z);
       if (zoffset < movement.y) {
         movement = (movement.x, 0);
         SetXYZ((pos.x, pos.y, RemoteRay.HitLocation.z));
@@ -118,16 +121,9 @@ class Ship : Actor {
       }
     }
 
-    SetXYZ((pos.x - (Sin(forwardAngle) * movement.x) + (Cos(forwardAngle) * throttle / 20), pos.y - (Cos(forwardAngle) * movement.x) + (Sin(forwardAngle) * throttle / 20), pos.z - movement.y));
+    SetXYZ((pos.x + (Sin(forwardAngle) * movement.x) + (Cos(forwardAngle) * throttle / 20), pos.y - (Cos(forwardAngle) * movement.x) + (Sin(forwardAngle) * throttle / 20), pos.z - movement.y));
 
     PlayerInfo p = players[consoleplayer];
-    // TODO: move these flags to player class?
-    p.mo.bNOGRAVITY = true;
-    p.mo.bNOCLIP = true;
-    p.mo.bSOLID = false;
-    p.mo.bDROPOFF = false;
-    p.mo.MaxStepHeight = 0;
-    p.mo.SetXYZ((pos.x - (Cos(forwardAngle) * 300), pos.y - (Sin(forwardAngle) * 300), 0));
-
+    p.mo.SetXYZ((pos.x - (Cos(forwardAngle) * 200), pos.y - (Sin(forwardAngle) * 200), 0));
   }
 }
