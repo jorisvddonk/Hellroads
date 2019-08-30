@@ -1,0 +1,48 @@
+Class ShipSpawnerAmmo : Ammo
+{
+  Default {
+    Inventory.PickupMessage "ShipSpawnerAmmo";
+    Inventory.Amount 1;
+    Inventory.MaxAmount 1;
+    Inventory.Icon "CLIPA0";
+    Ammo.BackpackAmount 1;
+    Ammo.BackpackMaxAmount 1;
+  }
+
+  States
+  {
+    Spawn:
+      CLIP A -1;
+      stop;
+  }
+}
+
+Class ShipSpawner : Pistol
+{
+  Default {
+    Weapon.SlotNumber 2;
+    Weapon.AmmoType "ShipSpawnerAmmo";
+    Weapon.AmmoGive 1;
+    +Weapon.NoAlert;
+    Weapon.SelectionOrder 8500;
+  }
+
+  States
+  {
+    Ready:
+      PUNG A 1 A_WeaponReady;
+      Loop;
+    Deselect:
+      PUNG A 1 A_Lower;
+      Loop;
+    Select:
+      PUNG A 1 A_Raise;
+      Loop;
+    Fire:
+      PUNG A 1;
+      PUNG B 1 A_FireCustomMissile("Ship");
+      PUNG A 1 A_CheckReload;
+      PUNG A 1 A_Refire;
+      Goto Ready;
+  }
+}

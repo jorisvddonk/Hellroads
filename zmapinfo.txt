@@ -1,6 +1,7 @@
 GameInfo
 {
 	AddEventHandlers = "SkyroadsHandler"
+	PlayerClasses = "SkyroadsPlayer"
 }
 
 DoomEdNums

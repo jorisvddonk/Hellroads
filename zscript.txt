@@ -1,4 +1,6 @@
-version "4.0"
+version "3.5.0"
 
 #include "zscript/Ship.zsc"
 #include "zscript/SkyroadsHandler.zsc"
+#include "zscript/SkyroadsPlayer.zsc"
+#include "zscript/ShipSpawner.zsc"
