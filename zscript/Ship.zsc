@@ -24,6 +24,20 @@ class Ship : Actor {
       SKYA C 3;
       SKYA D 3;
       loop;
+    Kaboom:
+      SBOO A 4 A_PlayWeaponSound("SBOOM");
+      SBOO B 4;
+      SBOO C 4;
+      SBOO D 4;
+      SBOO E 4;
+      SBOO F 4;
+      SBOO G 4;
+      TNT1 A 20;
+      TNT1 A 0 {
+        Actor ship = Spawn("Ship", self.initialPosition);
+        self.Destroy();
+      }
+      stop;
   }
 
   override void PostBeginPlay() {
@@ -40,20 +54,28 @@ class Ship : Actor {
   }
 
   void mLeft(bool a) {
-    movingLeft = a;
-    setMovement();
+    if (InStateSequence(CurState, ResolveState("Ready"))) {
+      movingLeft = a;
+      setMovement();
+    }
   }
   void mRight(bool a) {
-    movingRight = a;
-    setMovement();
+    if (InStateSequence(CurState, ResolveState("Ready"))) {
+      movingRight = a;
+      setMovement();
+    }
   }
   void throttleInc(bool a) {
-    throttleIncreasing = a;
-    setThrottle();
+    if (InStateSequence(CurState, ResolveState("Ready"))) {
+      throttleIncreasing = a;
+      setThrottle();
+    }
   }
   void throttleDec(bool a) {
-    throttleDecreasing = a;
-    setThrottle();
+    if (InStateSequence(CurState, ResolveState("Ready"))) {
+      throttleDecreasing = a;
+      setThrottle();
+    }
   }
 
   void setMovement() {
@@ -84,10 +106,11 @@ class Ship : Actor {
       falling = true;
     }
   }
-
+  
   void kaboom() {
-    Actor ship = Spawn("Ship", self.initialPosition);
-    self.Destroy();
+    if (!InStateSequence(CurState, ResolveState("Kaboom"))) {
+      SetState(ResolveState("Kaboom"));
+    }
   }
 
   override void Tick() {

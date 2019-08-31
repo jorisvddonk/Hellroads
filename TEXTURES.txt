@@ -14,3 +14,31 @@ Sprite SKYAD0, 28, 13 {
   Offset 14, 13
   Patch SKYAD0, 0, 0
 }
+Sprite SBOOA0, 26, 24 {
+  Offset 12,  12
+  Patch SBOOA0, 0, 0
+}
+Sprite SBOOB0, 37, 32 {
+  Offset 20,  16
+  Patch SBOOB0, 0, 0
+}
+Sprite SBOOC0, 39, 34 {
+  Offset 19,  16
+  Patch SBOOC0, 0, 0
+}
+Sprite SBOOD0, 45, 35 {
+  Offset 21,  16
+  Patch SBOOD0, 0, 0
+}
+Sprite SBOOE0, 48, 38 {
+  Offset 21,  16
+  Patch SBOOE0, 0, 0
+}
+Sprite SBOOF0, 49, 34 {
+  Offset 21,  16
+  Patch SBOOF0, 0, 0
+}
+Sprite SBOOG0, 52, 37 {
+  Offset 23,  18
+  Patch SBOOG0, 0, 0
+}
