@@ -298,7 +298,7 @@ Jimp.read("./lvl.png")
   })
   .catch(console.error);
 
-const SCALE = 8;
+const SCALE = 32;
 const generateRoom = (
   v0: Vertex,
   v1: Vertex,
