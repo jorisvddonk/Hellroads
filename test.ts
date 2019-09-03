@@ -43,10 +43,58 @@ interface Pixel {
   sid_W?: Sidedef;
 }
 
-const pixels: Pixel[] = [];
+const pixels: Map<number, Map<number, Pixel>> = new Map();
 const getPixel = (x: number, y: number) => {
-  return pixels.find(p => p.x === x && p.y === y);
+  let M = pixels.get(y);
+  if (M !== undefined) {
+    return M.get(x);
+  }
 };
+const addPixel = (pixel: Pixel) => {
+  let M = pixels.get(pixel.y);
+  if (M === undefined) {
+    M = new Map();
+  }
+  M.set(pixel.x, pixel);
+  pixels.set(pixel.y, M);
+};
+class PixelIterator implements Iterable<Pixel> {
+  constructor(public pixels: Map<number, Map<number, Pixel>>) {}
+
+  [Symbol.iterator]() {
+    return {
+      try: function(x, y) {
+        let M = pixels.get(y);
+        if (M !== undefined) {
+          let Z = M.get(x);
+          if (Z !== undefined) {
+            return { value: Z, done: false };
+          }
+        }
+      },
+      next: function() {
+        let retval;
+
+        retval = this.try(this.x, this.y);
+        if (retval !== undefined) {
+          this.x = this.x + 1;
+          return retval;
+        }
+        this.x = 0;
+        this.y = this.y + 1;
+
+        retval = this.try(this.x, this.y);
+        if (retval !== undefined) {
+          return retval;
+        } else {
+          return { done: true };
+        }
+      },
+      x: 0,
+      y: 0
+    };
+  }
+}
 
 const generateStuffFromimage = function(img: IJimp) {
   const sector0 = generateRoom(
@@ -84,7 +132,7 @@ const generateStuffFromimage = function(img: IJimp) {
     const { XS, YS } = transform(x, y, img);
 
     if (sprite != "0000") {
-      pixels.push({
+      addPixel({
         x: x,
         y: y,
         XS,
@@ -98,7 +146,7 @@ const generateStuffFromimage = function(img: IJimp) {
   const vertices = [];
   const linedefs = [];
 
-  pixels.forEach(pixel => {
+  for (var pixel of new PixelIterator(pixels)) {
     // create vertices and linedefs for all pixels
 
     let needs_N = false;
@@ -181,9 +229,9 @@ const generateStuffFromimage = function(img: IJimp) {
         pixel.lin_W.sideback = new Sidedef(sector0, pixel.sprite);
       }
     }
-  });
+  }
 
-  pixels.forEach(pixel => {
+  for (var pixel of new PixelIterator(pixels)) {
     // create sectors and sidedefs for all pxels
     pixel.sector = new Sector(pixel.sprite, 10 * SCALE, 0.5 * SCALE);
     pixel.sid_N = new Sidedef(pixel.sector, pixel.sprite);
@@ -214,7 +262,7 @@ const generateStuffFromimage = function(img: IJimp) {
     } else {
       getPixel(pixel.x - 1, pixel.y).lin_E.sideback = pixel.sid_W;
     }
-  });
+  }
 
   const { XS, YS } = transform(0, Math.floor(img.bitmap.height / 2), img);
   const udmfText = generateUDMF(XS, YS);
@@ -246,7 +294,7 @@ Jimp.read("./lvl.png")
   })
   .catch(console.error);
 
-const SCALE = 32;
+const SCALE = 8;
 const generateRoom = (
   v0: Vertex,
   v1: Vertex,
