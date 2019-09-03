@@ -185,7 +185,7 @@ const generateStuffFromimage = function(img: IJimp) {
 
   pixels.forEach(pixel => {
     // create sectors and sidedefs for all pxels
-    pixel.sector = new Sector(pixel.sprite, 10 * SCALE, 1 * SCALE);
+    pixel.sector = new Sector(pixel.sprite, 10 * SCALE, 0.5 * SCALE);
     pixel.sid_N = new Sidedef(pixel.sector, pixel.sprite);
     pixel.sid_E = new Sidedef(pixel.sector, pixel.sprite);
     pixel.sid_S = new Sidedef(pixel.sector, pixel.sprite);
@@ -255,7 +255,7 @@ const generateRoom = (
   texture: string,
   heightfloor?: number
 ) => {
-  const s0 = new Sector(texture, 10 * SCALE, -2 * SCALE);
+  const s0 = new Sector(texture, 10 * SCALE, -1 * SCALE);
   const side1 = new Sidedef(s0, texture);
   const side2 = new Sidedef(s0, texture);
   const side3 = new Sidedef(s0, texture);

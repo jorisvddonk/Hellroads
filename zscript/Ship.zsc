@@ -92,17 +92,17 @@ class Ship : Actor {
   void setThrottle() {
     float throttle = 0;
     if (throttleIncreasing) {
-      throttle += 3;
+      throttle += 7;
     }
     if (throttleDecreasing) {
-      throttle -= 3;
+      throttle -= 7;
     }
     throttleDelta = throttle;
   }
 
   void jump() {
     if (falling == false) {
-      movement = (movement.x, -9.0);
+      movement = (movement.x, -15.0);
       falling = true;
     }
   }
@@ -127,7 +127,7 @@ class Ship : Actor {
     // Console.Printf("Throttle: %f, ThrottleDelta: %f", throttle, throttleDelta);
 
     if (falling) {
-      movement = (movement.x, movement.y + 0.8);
+      movement = (movement.x, movement.y + 1.6);
     }
 
     bool hitFront = pos.z - self.getZAt(20, 0) < -10;
@@ -162,13 +162,13 @@ class Ship : Actor {
       falling = true;
     }
 
-    if (self.pos.z < -50) {
+    if (self.pos.z < -0.1) {
       self.kaboom();
     }
 
     SetOrigin((pos.x + (Sin(forwardAngle) * movement.x) + (Cos(forwardAngle) * throttle / 20), pos.y - (Cos(forwardAngle) * movement.x) + (Sin(forwardAngle) * throttle / 20), pos.z - movement.y), true);
 
     PlayerInfo p = players[consoleplayer];
-    p.mo.SetOrigin((pos.x - (Cos(forwardAngle) * 200), pos.y - (Sin(forwardAngle) * 200), pos.z + 20), true);
+    p.mo.SetOrigin((pos.x - (Cos(forwardAngle) * 200), pos.y - (Sin(forwardAngle) * 200), 40), true);
   }
 }
