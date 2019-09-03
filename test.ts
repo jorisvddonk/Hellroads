@@ -81,18 +81,16 @@ const generateStuffFromimage = function(img: IJimp) {
     const XS = X * SCALE;
     const YS = Y * SCALE;
 
-    pixels.push({
-      x: x,
-      y: y,
-      XS,
-      YS,
-      color,
-      sprite,
-      border_N: y === 0,
-      border_E: x === img.bitmap.width - 1,
-      border_S: y === img.bitmap.height - 1,
-      border_W: x === 0
-    });
+    if (sprite != "0000") {
+      pixels.push({
+        x: x,
+        y: y,
+        XS,
+        YS,
+        color,
+        sprite
+      });
+    }
   });
 
   const vertices = [];
@@ -135,6 +133,8 @@ const generateStuffFromimage = function(img: IJimp) {
       if (pxl_N) {
         pxl_N.lin_S = line;
         pxl_N.own_S = false;
+      } else {
+        pixel.lin_N.sideback = new Sidedef(sector0, pixel.sprite);
       }
     }
 
@@ -147,6 +147,8 @@ const generateStuffFromimage = function(img: IJimp) {
       if (pxl_E) {
         pxl_E.lin_W = line;
         pxl_E.own_W = false;
+      } else {
+        pixel.lin_E.sideback = new Sidedef(sector0, pixel.sprite);
       }
     }
 
@@ -159,6 +161,8 @@ const generateStuffFromimage = function(img: IJimp) {
       if (pxl_S) {
         pxl_S.lin_N = line;
         pxl_S.own_N = false;
+      } else {
+        pixel.lin_S.sideback = new Sidedef(sector0, pixel.sprite);
       }
     }
 
@@ -171,6 +175,8 @@ const generateStuffFromimage = function(img: IJimp) {
       if (pxl_W) {
         pxl_W.lin_E = line;
         pxl_W.own_E = false;
+      } else {
+        pixel.lin_W.sideback = new Sidedef(sector0, pixel.sprite);
       }
     }
   });
@@ -205,19 +211,6 @@ const generateStuffFromimage = function(img: IJimp) {
       pixel.lin_W.sidefront = pixel.sid_W;
     } else {
       getPixel(pixel.x - 1, pixel.y).lin_E.sideback = pixel.sid_W;
-    }
-
-    if (pixel.border_N) {
-      pixel.lin_N.sideback = new Sidedef(sector0, pixel.sprite); // correct sprite?
-    }
-    if (pixel.border_E) {
-      pixel.lin_E.sideback = new Sidedef(sector0, pixel.sprite); // correct sprite?
-    }
-    if (pixel.border_S) {
-      pixel.lin_S.sideback = new Sidedef(sector0, pixel.sprite); // correct sprite?
-    }
-    if (pixel.border_W) {
-      pixel.lin_W.sideback = new Sidedef(sector0, pixel.sprite); // correct sprite?
     }
   });
 
