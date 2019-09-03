@@ -1,0 +1,11500 @@
+
+namespace = "zdoom";
+thing
+{
+x = 96.000;
+y = -32.000;
+type = 1;
+skill1 = true;
+skill2 = true;
+skill3 = true;
+skill4 = true;
+skill5 = true;
+skill6 = true;
+skill7 = true;
+skill8 = true;
+single = true;
+coop = true;
+dm = true;
+class1 = true;
+class2 = true;
+class3 = true;
+class4 = true;
+class5 = true;
+}
+
+// Vertexes
+
+// vertex 0
+vertex
+{
+x = -400.000;
+y = 400.000;
+}
+
+
+
+// vertex 1
+vertex
+{
+x = 400.000;
+y = 400.000;
+}
+
+
+
+// vertex 2
+vertex
+{
+x = 400.000;
+y = -400.000;
+}
+
+
+
+// vertex 3
+vertex
+{
+x = -400.000;
+y = -400.000;
+}
+
+
+
+// vertex 4
+vertex
+{
+x = -176.000;
+y = 176.000;
+}
+
+
+
+// vertex 5
+vertex
+{
+x = -144.000;
+y = 176.000;
+}
+
+
+
+// vertex 6
+vertex
+{
+x = -144.000;
+y = 176.000;
+}
+
+
+
+// vertex 7
+vertex
+{
+x = -144.000;
+y = 144.000;
+}
+
+
+
+// vertex 8
+vertex
+{
+x = -144.000;
+y = 144.000;
+}
+
+
+
+// vertex 9
+vertex
+{
+x = -176.000;
+y = 144.000;
+}
+
+
+
+// vertex 10
+vertex
+{
+x = -176.000;
+y = 144.000;
+}
+
+
+
+// vertex 11
+vertex
+{
+x = -176.000;
+y = 176.000;
+}
+
+
+
+// vertex 12
+vertex
+{
+x = -144.000;
+y = 176.000;
+}
+
+
+
+// vertex 13
+vertex
+{
+x = -112.000;
+y = 176.000;
+}
+
+
+
+// vertex 14
+vertex
+{
+x = -112.000;
+y = 176.000;
+}
+
+
+
+// vertex 15
+vertex
+{
+x = -112.000;
+y = 144.000;
+}
+
+
+
+// vertex 16
+vertex
+{
+x = -112.000;
+y = 144.000;
+}
+
+
+
+// vertex 17
+vertex
+{
+x = -144.000;
+y = 144.000;
+}
+
+
+
+// vertex 18
+vertex
+{
+x = -112.000;
+y = 176.000;
+}
+
+
+
+// vertex 19
+vertex
+{
+x = -80.000;
+y = 176.000;
+}
+
+
+
+// vertex 20
+vertex
+{
+x = -80.000;
+y = 176.000;
+}
+
+
+
+// vertex 21
+vertex
+{
+x = -80.000;
+y = 144.000;
+}
+
+
+
+// vertex 22
+vertex
+{
+x = -80.000;
+y = 144.000;
+}
+
+
+
+// vertex 23
+vertex
+{
+x = -112.000;
+y = 144.000;
+}
+
+
+
+// vertex 24
+vertex
+{
+x = -80.000;
+y = 176.000;
+}
+
+
+
+// vertex 25
+vertex
+{
+x = -48.000;
+y = 176.000;
+}
+
+
+
+// vertex 26
+vertex
+{
+x = -48.000;
+y = 176.000;
+}
+
+
+
+// vertex 27
+vertex
+{
+x = -48.000;
+y = 144.000;
+}
+
+
+
+// vertex 28
+vertex
+{
+x = -48.000;
+y = 144.000;
+}
+
+
+
+// vertex 29
+vertex
+{
+x = -80.000;
+y = 144.000;
+}
+
+
+
+// vertex 30
+vertex
+{
+x = -48.000;
+y = 176.000;
+}
+
+
+
+// vertex 31
+vertex
+{
+x = -16.000;
+y = 176.000;
+}
+
+
+
+// vertex 32
+vertex
+{
+x = -16.000;
+y = 176.000;
+}
+
+
+
+// vertex 33
+vertex
+{
+x = -16.000;
+y = 144.000;
+}
+
+
+
+// vertex 34
+vertex
+{
+x = -16.000;
+y = 144.000;
+}
+
+
+
+// vertex 35
+vertex
+{
+x = -48.000;
+y = 144.000;
+}
+
+
+
+// vertex 36
+vertex
+{
+x = -16.000;
+y = 176.000;
+}
+
+
+
+// vertex 37
+vertex
+{
+x = 16.000;
+y = 176.000;
+}
+
+
+
+// vertex 38
+vertex
+{
+x = 16.000;
+y = 176.000;
+}
+
+
+
+// vertex 39
+vertex
+{
+x = 16.000;
+y = 144.000;
+}
+
+
+
+// vertex 40
+vertex
+{
+x = 16.000;
+y = 144.000;
+}
+
+
+
+// vertex 41
+vertex
+{
+x = -16.000;
+y = 144.000;
+}
+
+
+
+// vertex 42
+vertex
+{
+x = 16.000;
+y = 176.000;
+}
+
+
+
+// vertex 43
+vertex
+{
+x = 48.000;
+y = 176.000;
+}
+
+
+
+// vertex 44
+vertex
+{
+x = 48.000;
+y = 176.000;
+}
+
+
+
+// vertex 45
+vertex
+{
+x = 48.000;
+y = 144.000;
+}
+
+
+
+// vertex 46
+vertex
+{
+x = 48.000;
+y = 144.000;
+}
+
+
+
+// vertex 47
+vertex
+{
+x = 16.000;
+y = 144.000;
+}
+
+
+
+// vertex 48
+vertex
+{
+x = 48.000;
+y = 176.000;
+}
+
+
+
+// vertex 49
+vertex
+{
+x = 80.000;
+y = 176.000;
+}
+
+
+
+// vertex 50
+vertex
+{
+x = 80.000;
+y = 176.000;
+}
+
+
+
+// vertex 51
+vertex
+{
+x = 80.000;
+y = 144.000;
+}
+
+
+
+// vertex 52
+vertex
+{
+x = 80.000;
+y = 144.000;
+}
+
+
+
+// vertex 53
+vertex
+{
+x = 48.000;
+y = 144.000;
+}
+
+
+
+// vertex 54
+vertex
+{
+x = 80.000;
+y = 176.000;
+}
+
+
+
+// vertex 55
+vertex
+{
+x = 112.000;
+y = 176.000;
+}
+
+
+
+// vertex 56
+vertex
+{
+x = 112.000;
+y = 176.000;
+}
+
+
+
+// vertex 57
+vertex
+{
+x = 112.000;
+y = 144.000;
+}
+
+
+
+// vertex 58
+vertex
+{
+x = 112.000;
+y = 144.000;
+}
+
+
+
+// vertex 59
+vertex
+{
+x = 80.000;
+y = 144.000;
+}
+
+
+
+// vertex 60
+vertex
+{
+x = 112.000;
+y = 176.000;
+}
+
+
+
+// vertex 61
+vertex
+{
+x = 144.000;
+y = 176.000;
+}
+
+
+
+// vertex 62
+vertex
+{
+x = 144.000;
+y = 176.000;
+}
+
+
+
+// vertex 63
+vertex
+{
+x = 144.000;
+y = 144.000;
+}
+
+
+
+// vertex 64
+vertex
+{
+x = 144.000;
+y = 144.000;
+}
+
+
+
+// vertex 65
+vertex
+{
+x = 112.000;
+y = 144.000;
+}
+
+
+
+// vertex 66
+vertex
+{
+x = -144.000;
+y = 144.000;
+}
+
+
+
+// vertex 67
+vertex
+{
+x = -144.000;
+y = 112.000;
+}
+
+
+
+// vertex 68
+vertex
+{
+x = -144.000;
+y = 112.000;
+}
+
+
+
+// vertex 69
+vertex
+{
+x = -176.000;
+y = 112.000;
+}
+
+
+
+// vertex 70
+vertex
+{
+x = -176.000;
+y = 112.000;
+}
+
+
+
+// vertex 71
+vertex
+{
+x = -176.000;
+y = 144.000;
+}
+
+
+
+// vertex 72
+vertex
+{
+x = -112.000;
+y = 144.000;
+}
+
+
+
+// vertex 73
+vertex
+{
+x = -112.000;
+y = 112.000;
+}
+
+
+
+// vertex 74
+vertex
+{
+x = -112.000;
+y = 112.000;
+}
+
+
+
+// vertex 75
+vertex
+{
+x = -144.000;
+y = 112.000;
+}
+
+
+
+// vertex 76
+vertex
+{
+x = -80.000;
+y = 144.000;
+}
+
+
+
+// vertex 77
+vertex
+{
+x = -80.000;
+y = 112.000;
+}
+
+
+
+// vertex 78
+vertex
+{
+x = -80.000;
+y = 112.000;
+}
+
+
+
+// vertex 79
+vertex
+{
+x = -112.000;
+y = 112.000;
+}
+
+
+
+// vertex 80
+vertex
+{
+x = -48.000;
+y = 144.000;
+}
+
+
+
+// vertex 81
+vertex
+{
+x = -48.000;
+y = 112.000;
+}
+
+
+
+// vertex 82
+vertex
+{
+x = -48.000;
+y = 112.000;
+}
+
+
+
+// vertex 83
+vertex
+{
+x = -80.000;
+y = 112.000;
+}
+
+
+
+// vertex 84
+vertex
+{
+x = -16.000;
+y = 144.000;
+}
+
+
+
+// vertex 85
+vertex
+{
+x = -16.000;
+y = 112.000;
+}
+
+
+
+// vertex 86
+vertex
+{
+x = -16.000;
+y = 112.000;
+}
+
+
+
+// vertex 87
+vertex
+{
+x = -48.000;
+y = 112.000;
+}
+
+
+
+// vertex 88
+vertex
+{
+x = 16.000;
+y = 144.000;
+}
+
+
+
+// vertex 89
+vertex
+{
+x = 16.000;
+y = 112.000;
+}
+
+
+
+// vertex 90
+vertex
+{
+x = 16.000;
+y = 112.000;
+}
+
+
+
+// vertex 91
+vertex
+{
+x = -16.000;
+y = 112.000;
+}
+
+
+
+// vertex 92
+vertex
+{
+x = 48.000;
+y = 144.000;
+}
+
+
+
+// vertex 93
+vertex
+{
+x = 48.000;
+y = 112.000;
+}
+
+
+
+// vertex 94
+vertex
+{
+x = 48.000;
+y = 112.000;
+}
+
+
+
+// vertex 95
+vertex
+{
+x = 16.000;
+y = 112.000;
+}
+
+
+
+// vertex 96
+vertex
+{
+x = 80.000;
+y = 144.000;
+}
+
+
+
+// vertex 97
+vertex
+{
+x = 80.000;
+y = 112.000;
+}
+
+
+
+// vertex 98
+vertex
+{
+x = 80.000;
+y = 112.000;
+}
+
+
+
+// vertex 99
+vertex
+{
+x = 48.000;
+y = 112.000;
+}
+
+
+
+// vertex 100
+vertex
+{
+x = 112.000;
+y = 144.000;
+}
+
+
+
+// vertex 101
+vertex
+{
+x = 112.000;
+y = 112.000;
+}
+
+
+
+// vertex 102
+vertex
+{
+x = 112.000;
+y = 112.000;
+}
+
+
+
+// vertex 103
+vertex
+{
+x = 80.000;
+y = 112.000;
+}
+
+
+
+// vertex 104
+vertex
+{
+x = 144.000;
+y = 144.000;
+}
+
+
+
+// vertex 105
+vertex
+{
+x = 144.000;
+y = 112.000;
+}
+
+
+
+// vertex 106
+vertex
+{
+x = 144.000;
+y = 112.000;
+}
+
+
+
+// vertex 107
+vertex
+{
+x = 112.000;
+y = 112.000;
+}
+
+
+
+// vertex 108
+vertex
+{
+x = -144.000;
+y = 112.000;
+}
+
+
+
+// vertex 109
+vertex
+{
+x = -144.000;
+y = 80.000;
+}
+
+
+
+// vertex 110
+vertex
+{
+x = -144.000;
+y = 80.000;
+}
+
+
+
+// vertex 111
+vertex
+{
+x = -176.000;
+y = 80.000;
+}
+
+
+
+// vertex 112
+vertex
+{
+x = -176.000;
+y = 80.000;
+}
+
+
+
+// vertex 113
+vertex
+{
+x = -176.000;
+y = 112.000;
+}
+
+
+
+// vertex 114
+vertex
+{
+x = -112.000;
+y = 112.000;
+}
+
+
+
+// vertex 115
+vertex
+{
+x = -112.000;
+y = 80.000;
+}
+
+
+
+// vertex 116
+vertex
+{
+x = -112.000;
+y = 80.000;
+}
+
+
+
+// vertex 117
+vertex
+{
+x = -144.000;
+y = 80.000;
+}
+
+
+
+// vertex 118
+vertex
+{
+x = -80.000;
+y = 112.000;
+}
+
+
+
+// vertex 119
+vertex
+{
+x = -80.000;
+y = 80.000;
+}
+
+
+
+// vertex 120
+vertex
+{
+x = -80.000;
+y = 80.000;
+}
+
+
+
+// vertex 121
+vertex
+{
+x = -112.000;
+y = 80.000;
+}
+
+
+
+// vertex 122
+vertex
+{
+x = -48.000;
+y = 112.000;
+}
+
+
+
+// vertex 123
+vertex
+{
+x = -48.000;
+y = 80.000;
+}
+
+
+
+// vertex 124
+vertex
+{
+x = -48.000;
+y = 80.000;
+}
+
+
+
+// vertex 125
+vertex
+{
+x = -80.000;
+y = 80.000;
+}
+
+
+
+// vertex 126
+vertex
+{
+x = -16.000;
+y = 112.000;
+}
+
+
+
+// vertex 127
+vertex
+{
+x = -16.000;
+y = 80.000;
+}
+
+
+
+// vertex 128
+vertex
+{
+x = -16.000;
+y = 80.000;
+}
+
+
+
+// vertex 129
+vertex
+{
+x = -48.000;
+y = 80.000;
+}
+
+
+
+// vertex 130
+vertex
+{
+x = 16.000;
+y = 112.000;
+}
+
+
+
+// vertex 131
+vertex
+{
+x = 16.000;
+y = 80.000;
+}
+
+
+
+// vertex 132
+vertex
+{
+x = 16.000;
+y = 80.000;
+}
+
+
+
+// vertex 133
+vertex
+{
+x = -16.000;
+y = 80.000;
+}
+
+
+
+// vertex 134
+vertex
+{
+x = 48.000;
+y = 112.000;
+}
+
+
+
+// vertex 135
+vertex
+{
+x = 48.000;
+y = 80.000;
+}
+
+
+
+// vertex 136
+vertex
+{
+x = 48.000;
+y = 80.000;
+}
+
+
+
+// vertex 137
+vertex
+{
+x = 16.000;
+y = 80.000;
+}
+
+
+
+// vertex 138
+vertex
+{
+x = 80.000;
+y = 112.000;
+}
+
+
+
+// vertex 139
+vertex
+{
+x = 80.000;
+y = 80.000;
+}
+
+
+
+// vertex 140
+vertex
+{
+x = 80.000;
+y = 80.000;
+}
+
+
+
+// vertex 141
+vertex
+{
+x = 48.000;
+y = 80.000;
+}
+
+
+
+// vertex 142
+vertex
+{
+x = 112.000;
+y = 112.000;
+}
+
+
+
+// vertex 143
+vertex
+{
+x = 112.000;
+y = 80.000;
+}
+
+
+
+// vertex 144
+vertex
+{
+x = 112.000;
+y = 80.000;
+}
+
+
+
+// vertex 145
+vertex
+{
+x = 80.000;
+y = 80.000;
+}
+
+
+
+// vertex 146
+vertex
+{
+x = 144.000;
+y = 112.000;
+}
+
+
+
+// vertex 147
+vertex
+{
+x = 144.000;
+y = 80.000;
+}
+
+
+
+// vertex 148
+vertex
+{
+x = 144.000;
+y = 80.000;
+}
+
+
+
+// vertex 149
+vertex
+{
+x = 112.000;
+y = 80.000;
+}
+
+
+
+// vertex 150
+vertex
+{
+x = -144.000;
+y = 80.000;
+}
+
+
+
+// vertex 151
+vertex
+{
+x = -144.000;
+y = 48.000;
+}
+
+
+
+// vertex 152
+vertex
+{
+x = -144.000;
+y = 48.000;
+}
+
+
+
+// vertex 153
+vertex
+{
+x = -176.000;
+y = 48.000;
+}
+
+
+
+// vertex 154
+vertex
+{
+x = -176.000;
+y = 48.000;
+}
+
+
+
+// vertex 155
+vertex
+{
+x = -176.000;
+y = 80.000;
+}
+
+
+
+// vertex 156
+vertex
+{
+x = -112.000;
+y = 80.000;
+}
+
+
+
+// vertex 157
+vertex
+{
+x = -112.000;
+y = 48.000;
+}
+
+
+
+// vertex 158
+vertex
+{
+x = -112.000;
+y = 48.000;
+}
+
+
+
+// vertex 159
+vertex
+{
+x = -144.000;
+y = 48.000;
+}
+
+
+
+// vertex 160
+vertex
+{
+x = -80.000;
+y = 80.000;
+}
+
+
+
+// vertex 161
+vertex
+{
+x = -80.000;
+y = 48.000;
+}
+
+
+
+// vertex 162
+vertex
+{
+x = -80.000;
+y = 48.000;
+}
+
+
+
+// vertex 163
+vertex
+{
+x = -112.000;
+y = 48.000;
+}
+
+
+
+// vertex 164
+vertex
+{
+x = -48.000;
+y = 80.000;
+}
+
+
+
+// vertex 165
+vertex
+{
+x = -48.000;
+y = 48.000;
+}
+
+
+
+// vertex 166
+vertex
+{
+x = -48.000;
+y = 48.000;
+}
+
+
+
+// vertex 167
+vertex
+{
+x = -80.000;
+y = 48.000;
+}
+
+
+
+// vertex 168
+vertex
+{
+x = -16.000;
+y = 80.000;
+}
+
+
+
+// vertex 169
+vertex
+{
+x = -16.000;
+y = 48.000;
+}
+
+
+
+// vertex 170
+vertex
+{
+x = -16.000;
+y = 48.000;
+}
+
+
+
+// vertex 171
+vertex
+{
+x = -48.000;
+y = 48.000;
+}
+
+
+
+// vertex 172
+vertex
+{
+x = 16.000;
+y = 80.000;
+}
+
+
+
+// vertex 173
+vertex
+{
+x = 16.000;
+y = 48.000;
+}
+
+
+
+// vertex 174
+vertex
+{
+x = 16.000;
+y = 48.000;
+}
+
+
+
+// vertex 175
+vertex
+{
+x = -16.000;
+y = 48.000;
+}
+
+
+
+// vertex 176
+vertex
+{
+x = 48.000;
+y = 80.000;
+}
+
+
+
+// vertex 177
+vertex
+{
+x = 48.000;
+y = 48.000;
+}
+
+
+
+// vertex 178
+vertex
+{
+x = 48.000;
+y = 48.000;
+}
+
+
+
+// vertex 179
+vertex
+{
+x = 16.000;
+y = 48.000;
+}
+
+
+
+// vertex 180
+vertex
+{
+x = 80.000;
+y = 80.000;
+}
+
+
+
+// vertex 181
+vertex
+{
+x = 80.000;
+y = 48.000;
+}
+
+
+
+// vertex 182
+vertex
+{
+x = 80.000;
+y = 48.000;
+}
+
+
+
+// vertex 183
+vertex
+{
+x = 48.000;
+y = 48.000;
+}
+
+
+
+// vertex 184
+vertex
+{
+x = 112.000;
+y = 80.000;
+}
+
+
+
+// vertex 185
+vertex
+{
+x = 112.000;
+y = 48.000;
+}
+
+
+
+// vertex 186
+vertex
+{
+x = 112.000;
+y = 48.000;
+}
+
+
+
+// vertex 187
+vertex
+{
+x = 80.000;
+y = 48.000;
+}
+
+
+
+// vertex 188
+vertex
+{
+x = 144.000;
+y = 80.000;
+}
+
+
+
+// vertex 189
+vertex
+{
+x = 144.000;
+y = 48.000;
+}
+
+
+
+// vertex 190
+vertex
+{
+x = 144.000;
+y = 48.000;
+}
+
+
+
+// vertex 191
+vertex
+{
+x = 112.000;
+y = 48.000;
+}
+
+
+
+// vertex 192
+vertex
+{
+x = -144.000;
+y = 48.000;
+}
+
+
+
+// vertex 193
+vertex
+{
+x = -144.000;
+y = 16.000;
+}
+
+
+
+// vertex 194
+vertex
+{
+x = -144.000;
+y = 16.000;
+}
+
+
+
+// vertex 195
+vertex
+{
+x = -176.000;
+y = 16.000;
+}
+
+
+
+// vertex 196
+vertex
+{
+x = -176.000;
+y = 16.000;
+}
+
+
+
+// vertex 197
+vertex
+{
+x = -176.000;
+y = 48.000;
+}
+
+
+
+// vertex 198
+vertex
+{
+x = -112.000;
+y = 48.000;
+}
+
+
+
+// vertex 199
+vertex
+{
+x = -112.000;
+y = 16.000;
+}
+
+
+
+// vertex 200
+vertex
+{
+x = -112.000;
+y = 16.000;
+}
+
+
+
+// vertex 201
+vertex
+{
+x = -144.000;
+y = 16.000;
+}
+
+
+
+// vertex 202
+vertex
+{
+x = -80.000;
+y = 48.000;
+}
+
+
+
+// vertex 203
+vertex
+{
+x = -80.000;
+y = 16.000;
+}
+
+
+
+// vertex 204
+vertex
+{
+x = -80.000;
+y = 16.000;
+}
+
+
+
+// vertex 205
+vertex
+{
+x = -112.000;
+y = 16.000;
+}
+
+
+
+// vertex 206
+vertex
+{
+x = -48.000;
+y = 48.000;
+}
+
+
+
+// vertex 207
+vertex
+{
+x = -48.000;
+y = 16.000;
+}
+
+
+
+// vertex 208
+vertex
+{
+x = -48.000;
+y = 16.000;
+}
+
+
+
+// vertex 209
+vertex
+{
+x = -80.000;
+y = 16.000;
+}
+
+
+
+// vertex 210
+vertex
+{
+x = -16.000;
+y = 48.000;
+}
+
+
+
+// vertex 211
+vertex
+{
+x = -16.000;
+y = 16.000;
+}
+
+
+
+// vertex 212
+vertex
+{
+x = -16.000;
+y = 16.000;
+}
+
+
+
+// vertex 213
+vertex
+{
+x = -48.000;
+y = 16.000;
+}
+
+
+
+// vertex 214
+vertex
+{
+x = 16.000;
+y = 48.000;
+}
+
+
+
+// vertex 215
+vertex
+{
+x = 16.000;
+y = 16.000;
+}
+
+
+
+// vertex 216
+vertex
+{
+x = 16.000;
+y = 16.000;
+}
+
+
+
+// vertex 217
+vertex
+{
+x = -16.000;
+y = 16.000;
+}
+
+
+
+// vertex 218
+vertex
+{
+x = 48.000;
+y = 48.000;
+}
+
+
+
+// vertex 219
+vertex
+{
+x = 48.000;
+y = 16.000;
+}
+
+
+
+// vertex 220
+vertex
+{
+x = 48.000;
+y = 16.000;
+}
+
+
+
+// vertex 221
+vertex
+{
+x = 16.000;
+y = 16.000;
+}
+
+
+
+// vertex 222
+vertex
+{
+x = 80.000;
+y = 48.000;
+}
+
+
+
+// vertex 223
+vertex
+{
+x = 80.000;
+y = 16.000;
+}
+
+
+
+// vertex 224
+vertex
+{
+x = 80.000;
+y = 16.000;
+}
+
+
+
+// vertex 225
+vertex
+{
+x = 48.000;
+y = 16.000;
+}
+
+
+
+// vertex 226
+vertex
+{
+x = 112.000;
+y = 48.000;
+}
+
+
+
+// vertex 227
+vertex
+{
+x = 112.000;
+y = 16.000;
+}
+
+
+
+// vertex 228
+vertex
+{
+x = 112.000;
+y = 16.000;
+}
+
+
+
+// vertex 229
+vertex
+{
+x = 80.000;
+y = 16.000;
+}
+
+
+
+// vertex 230
+vertex
+{
+x = 144.000;
+y = 48.000;
+}
+
+
+
+// vertex 231
+vertex
+{
+x = 144.000;
+y = 16.000;
+}
+
+
+
+// vertex 232
+vertex
+{
+x = 144.000;
+y = 16.000;
+}
+
+
+
+// vertex 233
+vertex
+{
+x = 112.000;
+y = 16.000;
+}
+
+
+
+// vertex 234
+vertex
+{
+x = -144.000;
+y = 16.000;
+}
+
+
+
+// vertex 235
+vertex
+{
+x = -144.000;
+y = -16.000;
+}
+
+
+
+// vertex 236
+vertex
+{
+x = -144.000;
+y = -16.000;
+}
+
+
+
+// vertex 237
+vertex
+{
+x = -176.000;
+y = -16.000;
+}
+
+
+
+// vertex 238
+vertex
+{
+x = -176.000;
+y = -16.000;
+}
+
+
+
+// vertex 239
+vertex
+{
+x = -176.000;
+y = 16.000;
+}
+
+
+
+// vertex 240
+vertex
+{
+x = -112.000;
+y = 16.000;
+}
+
+
+
+// vertex 241
+vertex
+{
+x = -112.000;
+y = -16.000;
+}
+
+
+
+// vertex 242
+vertex
+{
+x = -112.000;
+y = -16.000;
+}
+
+
+
+// vertex 243
+vertex
+{
+x = -144.000;
+y = -16.000;
+}
+
+
+
+// vertex 244
+vertex
+{
+x = -80.000;
+y = 16.000;
+}
+
+
+
+// vertex 245
+vertex
+{
+x = -80.000;
+y = -16.000;
+}
+
+
+
+// vertex 246
+vertex
+{
+x = -80.000;
+y = -16.000;
+}
+
+
+
+// vertex 247
+vertex
+{
+x = -112.000;
+y = -16.000;
+}
+
+
+
+// vertex 248
+vertex
+{
+x = -48.000;
+y = 16.000;
+}
+
+
+
+// vertex 249
+vertex
+{
+x = -48.000;
+y = -16.000;
+}
+
+
+
+// vertex 250
+vertex
+{
+x = -48.000;
+y = -16.000;
+}
+
+
+
+// vertex 251
+vertex
+{
+x = -80.000;
+y = -16.000;
+}
+
+
+
+// vertex 252
+vertex
+{
+x = -16.000;
+y = 16.000;
+}
+
+
+
+// vertex 253
+vertex
+{
+x = -16.000;
+y = -16.000;
+}
+
+
+
+// vertex 254
+vertex
+{
+x = -16.000;
+y = -16.000;
+}
+
+
+
+// vertex 255
+vertex
+{
+x = -48.000;
+y = -16.000;
+}
+
+
+
+// vertex 256
+vertex
+{
+x = 16.000;
+y = 16.000;
+}
+
+
+
+// vertex 257
+vertex
+{
+x = 16.000;
+y = -16.000;
+}
+
+
+
+// vertex 258
+vertex
+{
+x = 16.000;
+y = -16.000;
+}
+
+
+
+// vertex 259
+vertex
+{
+x = -16.000;
+y = -16.000;
+}
+
+
+
+// vertex 260
+vertex
+{
+x = 48.000;
+y = 16.000;
+}
+
+
+
+// vertex 261
+vertex
+{
+x = 48.000;
+y = -16.000;
+}
+
+
+
+// vertex 262
+vertex
+{
+x = 48.000;
+y = -16.000;
+}
+
+
+
+// vertex 263
+vertex
+{
+x = 16.000;
+y = -16.000;
+}
+
+
+
+// vertex 264
+vertex
+{
+x = 80.000;
+y = 16.000;
+}
+
+
+
+// vertex 265
+vertex
+{
+x = 80.000;
+y = -16.000;
+}
+
+
+
+// vertex 266
+vertex
+{
+x = 80.000;
+y = -16.000;
+}
+
+
+
+// vertex 267
+vertex
+{
+x = 48.000;
+y = -16.000;
+}
+
+
+
+// vertex 268
+vertex
+{
+x = 112.000;
+y = 16.000;
+}
+
+
+
+// vertex 269
+vertex
+{
+x = 112.000;
+y = -16.000;
+}
+
+
+
+// vertex 270
+vertex
+{
+x = 112.000;
+y = -16.000;
+}
+
+
+
+// vertex 271
+vertex
+{
+x = 80.000;
+y = -16.000;
+}
+
+
+
+// vertex 272
+vertex
+{
+x = 144.000;
+y = 16.000;
+}
+
+
+
+// vertex 273
+vertex
+{
+x = 144.000;
+y = -16.000;
+}
+
+
+
+// vertex 274
+vertex
+{
+x = 144.000;
+y = -16.000;
+}
+
+
+
+// vertex 275
+vertex
+{
+x = 112.000;
+y = -16.000;
+}
+
+
+
+// vertex 276
+vertex
+{
+x = -144.000;
+y = -16.000;
+}
+
+
+
+// vertex 277
+vertex
+{
+x = -144.000;
+y = -48.000;
+}
+
+
+
+// vertex 278
+vertex
+{
+x = -144.000;
+y = -48.000;
+}
+
+
+
+// vertex 279
+vertex
+{
+x = -176.000;
+y = -48.000;
+}
+
+
+
+// vertex 280
+vertex
+{
+x = -176.000;
+y = -48.000;
+}
+
+
+
+// vertex 281
+vertex
+{
+x = -176.000;
+y = -16.000;
+}
+
+
+
+// vertex 282
+vertex
+{
+x = -112.000;
+y = -16.000;
+}
+
+
+
+// vertex 283
+vertex
+{
+x = -112.000;
+y = -48.000;
+}
+
+
+
+// vertex 284
+vertex
+{
+x = -112.000;
+y = -48.000;
+}
+
+
+
+// vertex 285
+vertex
+{
+x = -144.000;
+y = -48.000;
+}
+
+
+
+// vertex 286
+vertex
+{
+x = -80.000;
+y = -16.000;
+}
+
+
+
+// vertex 287
+vertex
+{
+x = -80.000;
+y = -48.000;
+}
+
+
+
+// vertex 288
+vertex
+{
+x = -80.000;
+y = -48.000;
+}
+
+
+
+// vertex 289
+vertex
+{
+x = -112.000;
+y = -48.000;
+}
+
+
+
+// vertex 290
+vertex
+{
+x = -48.000;
+y = -16.000;
+}
+
+
+
+// vertex 291
+vertex
+{
+x = -48.000;
+y = -48.000;
+}
+
+
+
+// vertex 292
+vertex
+{
+x = -48.000;
+y = -48.000;
+}
+
+
+
+// vertex 293
+vertex
+{
+x = -80.000;
+y = -48.000;
+}
+
+
+
+// vertex 294
+vertex
+{
+x = -16.000;
+y = -16.000;
+}
+
+
+
+// vertex 295
+vertex
+{
+x = -16.000;
+y = -48.000;
+}
+
+
+
+// vertex 296
+vertex
+{
+x = -16.000;
+y = -48.000;
+}
+
+
+
+// vertex 297
+vertex
+{
+x = -48.000;
+y = -48.000;
+}
+
+
+
+// vertex 298
+vertex
+{
+x = 16.000;
+y = -16.000;
+}
+
+
+
+// vertex 299
+vertex
+{
+x = 16.000;
+y = -48.000;
+}
+
+
+
+// vertex 300
+vertex
+{
+x = 16.000;
+y = -48.000;
+}
+
+
+
+// vertex 301
+vertex
+{
+x = -16.000;
+y = -48.000;
+}
+
+
+
+// vertex 302
+vertex
+{
+x = 48.000;
+y = -16.000;
+}
+
+
+
+// vertex 303
+vertex
+{
+x = 48.000;
+y = -48.000;
+}
+
+
+
+// vertex 304
+vertex
+{
+x = 48.000;
+y = -48.000;
+}
+
+
+
+// vertex 305
+vertex
+{
+x = 16.000;
+y = -48.000;
+}
+
+
+
+// vertex 306
+vertex
+{
+x = 80.000;
+y = -16.000;
+}
+
+
+
+// vertex 307
+vertex
+{
+x = 80.000;
+y = -48.000;
+}
+
+
+
+// vertex 308
+vertex
+{
+x = 80.000;
+y = -48.000;
+}
+
+
+
+// vertex 309
+vertex
+{
+x = 48.000;
+y = -48.000;
+}
+
+
+
+// vertex 310
+vertex
+{
+x = 112.000;
+y = -16.000;
+}
+
+
+
+// vertex 311
+vertex
+{
+x = 112.000;
+y = -48.000;
+}
+
+
+
+// vertex 312
+vertex
+{
+x = 112.000;
+y = -48.000;
+}
+
+
+
+// vertex 313
+vertex
+{
+x = 80.000;
+y = -48.000;
+}
+
+
+
+// vertex 314
+vertex
+{
+x = 144.000;
+y = -16.000;
+}
+
+
+
+// vertex 315
+vertex
+{
+x = 144.000;
+y = -48.000;
+}
+
+
+
+// vertex 316
+vertex
+{
+x = 144.000;
+y = -48.000;
+}
+
+
+
+// vertex 317
+vertex
+{
+x = 112.000;
+y = -48.000;
+}
+
+
+
+// vertex 318
+vertex
+{
+x = -144.000;
+y = -48.000;
+}
+
+
+
+// vertex 319
+vertex
+{
+x = -144.000;
+y = -80.000;
+}
+
+
+
+// vertex 320
+vertex
+{
+x = -144.000;
+y = -80.000;
+}
+
+
+
+// vertex 321
+vertex
+{
+x = -176.000;
+y = -80.000;
+}
+
+
+
+// vertex 322
+vertex
+{
+x = -176.000;
+y = -80.000;
+}
+
+
+
+// vertex 323
+vertex
+{
+x = -176.000;
+y = -48.000;
+}
+
+
+
+// vertex 324
+vertex
+{
+x = -112.000;
+y = -48.000;
+}
+
+
+
+// vertex 325
+vertex
+{
+x = -112.000;
+y = -80.000;
+}
+
+
+
+// vertex 326
+vertex
+{
+x = -112.000;
+y = -80.000;
+}
+
+
+
+// vertex 327
+vertex
+{
+x = -144.000;
+y = -80.000;
+}
+
+
+
+// vertex 328
+vertex
+{
+x = -80.000;
+y = -48.000;
+}
+
+
+
+// vertex 329
+vertex
+{
+x = -80.000;
+y = -80.000;
+}
+
+
+
+// vertex 330
+vertex
+{
+x = -80.000;
+y = -80.000;
+}
+
+
+
+// vertex 331
+vertex
+{
+x = -112.000;
+y = -80.000;
+}
+
+
+
+// vertex 332
+vertex
+{
+x = -48.000;
+y = -48.000;
+}
+
+
+
+// vertex 333
+vertex
+{
+x = -48.000;
+y = -80.000;
+}
+
+
+
+// vertex 334
+vertex
+{
+x = -48.000;
+y = -80.000;
+}
+
+
+
+// vertex 335
+vertex
+{
+x = -80.000;
+y = -80.000;
+}
+
+
+
+// vertex 336
+vertex
+{
+x = -16.000;
+y = -48.000;
+}
+
+
+
+// vertex 337
+vertex
+{
+x = -16.000;
+y = -80.000;
+}
+
+
+
+// vertex 338
+vertex
+{
+x = -16.000;
+y = -80.000;
+}
+
+
+
+// vertex 339
+vertex
+{
+x = -48.000;
+y = -80.000;
+}
+
+
+
+// vertex 340
+vertex
+{
+x = 16.000;
+y = -48.000;
+}
+
+
+
+// vertex 341
+vertex
+{
+x = 16.000;
+y = -80.000;
+}
+
+
+
+// vertex 342
+vertex
+{
+x = 16.000;
+y = -80.000;
+}
+
+
+
+// vertex 343
+vertex
+{
+x = -16.000;
+y = -80.000;
+}
+
+
+
+// vertex 344
+vertex
+{
+x = 48.000;
+y = -48.000;
+}
+
+
+
+// vertex 345
+vertex
+{
+x = 48.000;
+y = -80.000;
+}
+
+
+
+// vertex 346
+vertex
+{
+x = 48.000;
+y = -80.000;
+}
+
+
+
+// vertex 347
+vertex
+{
+x = 16.000;
+y = -80.000;
+}
+
+
+
+// vertex 348
+vertex
+{
+x = 80.000;
+y = -48.000;
+}
+
+
+
+// vertex 349
+vertex
+{
+x = 80.000;
+y = -80.000;
+}
+
+
+
+// vertex 350
+vertex
+{
+x = 80.000;
+y = -80.000;
+}
+
+
+
+// vertex 351
+vertex
+{
+x = 48.000;
+y = -80.000;
+}
+
+
+
+// vertex 352
+vertex
+{
+x = 112.000;
+y = -48.000;
+}
+
+
+
+// vertex 353
+vertex
+{
+x = 112.000;
+y = -80.000;
+}
+
+
+
+// vertex 354
+vertex
+{
+x = 112.000;
+y = -80.000;
+}
+
+
+
+// vertex 355
+vertex
+{
+x = 80.000;
+y = -80.000;
+}
+
+
+
+// vertex 356
+vertex
+{
+x = 144.000;
+y = -48.000;
+}
+
+
+
+// vertex 357
+vertex
+{
+x = 144.000;
+y = -80.000;
+}
+
+
+
+// vertex 358
+vertex
+{
+x = 144.000;
+y = -80.000;
+}
+
+
+
+// vertex 359
+vertex
+{
+x = 112.000;
+y = -80.000;
+}
+
+
+
+// vertex 360
+vertex
+{
+x = -144.000;
+y = -80.000;
+}
+
+
+
+// vertex 361
+vertex
+{
+x = -144.000;
+y = -112.000;
+}
+
+
+
+// vertex 362
+vertex
+{
+x = -144.000;
+y = -112.000;
+}
+
+
+
+// vertex 363
+vertex
+{
+x = -176.000;
+y = -112.000;
+}
+
+
+
+// vertex 364
+vertex
+{
+x = -176.000;
+y = -112.000;
+}
+
+
+
+// vertex 365
+vertex
+{
+x = -176.000;
+y = -80.000;
+}
+
+
+
+// vertex 366
+vertex
+{
+x = -112.000;
+y = -80.000;
+}
+
+
+
+// vertex 367
+vertex
+{
+x = -112.000;
+y = -112.000;
+}
+
+
+
+// vertex 368
+vertex
+{
+x = -112.000;
+y = -112.000;
+}
+
+
+
+// vertex 369
+vertex
+{
+x = -144.000;
+y = -112.000;
+}
+
+
+
+// vertex 370
+vertex
+{
+x = -80.000;
+y = -80.000;
+}
+
+
+
+// vertex 371
+vertex
+{
+x = -80.000;
+y = -112.000;
+}
+
+
+
+// vertex 372
+vertex
+{
+x = -80.000;
+y = -112.000;
+}
+
+
+
+// vertex 373
+vertex
+{
+x = -112.000;
+y = -112.000;
+}
+
+
+
+// vertex 374
+vertex
+{
+x = -48.000;
+y = -80.000;
+}
+
+
+
+// vertex 375
+vertex
+{
+x = -48.000;
+y = -112.000;
+}
+
+
+
+// vertex 376
+vertex
+{
+x = -48.000;
+y = -112.000;
+}
+
+
+
+// vertex 377
+vertex
+{
+x = -80.000;
+y = -112.000;
+}
+
+
+
+// vertex 378
+vertex
+{
+x = -16.000;
+y = -80.000;
+}
+
+
+
+// vertex 379
+vertex
+{
+x = -16.000;
+y = -112.000;
+}
+
+
+
+// vertex 380
+vertex
+{
+x = -16.000;
+y = -112.000;
+}
+
+
+
+// vertex 381
+vertex
+{
+x = -48.000;
+y = -112.000;
+}
+
+
+
+// vertex 382
+vertex
+{
+x = 16.000;
+y = -80.000;
+}
+
+
+
+// vertex 383
+vertex
+{
+x = 16.000;
+y = -112.000;
+}
+
+
+
+// vertex 384
+vertex
+{
+x = 16.000;
+y = -112.000;
+}
+
+
+
+// vertex 385
+vertex
+{
+x = -16.000;
+y = -112.000;
+}
+
+
+
+// vertex 386
+vertex
+{
+x = 48.000;
+y = -80.000;
+}
+
+
+
+// vertex 387
+vertex
+{
+x = 48.000;
+y = -112.000;
+}
+
+
+
+// vertex 388
+vertex
+{
+x = 48.000;
+y = -112.000;
+}
+
+
+
+// vertex 389
+vertex
+{
+x = 16.000;
+y = -112.000;
+}
+
+
+
+// vertex 390
+vertex
+{
+x = 80.000;
+y = -80.000;
+}
+
+
+
+// vertex 391
+vertex
+{
+x = 80.000;
+y = -112.000;
+}
+
+
+
+// vertex 392
+vertex
+{
+x = 80.000;
+y = -112.000;
+}
+
+
+
+// vertex 393
+vertex
+{
+x = 48.000;
+y = -112.000;
+}
+
+
+
+// vertex 394
+vertex
+{
+x = 112.000;
+y = -80.000;
+}
+
+
+
+// vertex 395
+vertex
+{
+x = 112.000;
+y = -112.000;
+}
+
+
+
+// vertex 396
+vertex
+{
+x = 112.000;
+y = -112.000;
+}
+
+
+
+// vertex 397
+vertex
+{
+x = 80.000;
+y = -112.000;
+}
+
+
+
+// vertex 398
+vertex
+{
+x = 144.000;
+y = -80.000;
+}
+
+
+
+// vertex 399
+vertex
+{
+x = 144.000;
+y = -112.000;
+}
+
+
+
+// vertex 400
+vertex
+{
+x = 144.000;
+y = -112.000;
+}
+
+
+
+// vertex 401
+vertex
+{
+x = 112.000;
+y = -112.000;
+}
+
+
+
+// vertex 402
+vertex
+{
+x = -144.000;
+y = -112.000;
+}
+
+
+
+// vertex 403
+vertex
+{
+x = -144.000;
+y = -144.000;
+}
+
+
+
+// vertex 404
+vertex
+{
+x = -144.000;
+y = -144.000;
+}
+
+
+
+// vertex 405
+vertex
+{
+x = -176.000;
+y = -144.000;
+}
+
+
+
+// vertex 406
+vertex
+{
+x = -176.000;
+y = -144.000;
+}
+
+
+
+// vertex 407
+vertex
+{
+x = -176.000;
+y = -112.000;
+}
+
+
+
+// vertex 408
+vertex
+{
+x = -112.000;
+y = -112.000;
+}
+
+
+
+// vertex 409
+vertex
+{
+x = -112.000;
+y = -144.000;
+}
+
+
+
+// vertex 410
+vertex
+{
+x = -112.000;
+y = -144.000;
+}
+
+
+
+// vertex 411
+vertex
+{
+x = -144.000;
+y = -144.000;
+}
+
+
+
+// vertex 412
+vertex
+{
+x = -80.000;
+y = -112.000;
+}
+
+
+
+// vertex 413
+vertex
+{
+x = -80.000;
+y = -144.000;
+}
+
+
+
+// vertex 414
+vertex
+{
+x = -80.000;
+y = -144.000;
+}
+
+
+
+// vertex 415
+vertex
+{
+x = -112.000;
+y = -144.000;
+}
+
+
+
+// vertex 416
+vertex
+{
+x = -48.000;
+y = -112.000;
+}
+
+
+
+// vertex 417
+vertex
+{
+x = -48.000;
+y = -144.000;
+}
+
+
+
+// vertex 418
+vertex
+{
+x = -48.000;
+y = -144.000;
+}
+
+
+
+// vertex 419
+vertex
+{
+x = -80.000;
+y = -144.000;
+}
+
+
+
+// vertex 420
+vertex
+{
+x = -16.000;
+y = -112.000;
+}
+
+
+
+// vertex 421
+vertex
+{
+x = -16.000;
+y = -144.000;
+}
+
+
+
+// vertex 422
+vertex
+{
+x = -16.000;
+y = -144.000;
+}
+
+
+
+// vertex 423
+vertex
+{
+x = -48.000;
+y = -144.000;
+}
+
+
+
+// vertex 424
+vertex
+{
+x = 16.000;
+y = -112.000;
+}
+
+
+
+// vertex 425
+vertex
+{
+x = 16.000;
+y = -144.000;
+}
+
+
+
+// vertex 426
+vertex
+{
+x = 16.000;
+y = -144.000;
+}
+
+
+
+// vertex 427
+vertex
+{
+x = -16.000;
+y = -144.000;
+}
+
+
+
+// vertex 428
+vertex
+{
+x = 48.000;
+y = -112.000;
+}
+
+
+
+// vertex 429
+vertex
+{
+x = 48.000;
+y = -144.000;
+}
+
+
+
+// vertex 430
+vertex
+{
+x = 48.000;
+y = -144.000;
+}
+
+
+
+// vertex 431
+vertex
+{
+x = 16.000;
+y = -144.000;
+}
+
+
+
+// vertex 432
+vertex
+{
+x = 80.000;
+y = -112.000;
+}
+
+
+
+// vertex 433
+vertex
+{
+x = 80.000;
+y = -144.000;
+}
+
+
+
+// vertex 434
+vertex
+{
+x = 80.000;
+y = -144.000;
+}
+
+
+
+// vertex 435
+vertex
+{
+x = 48.000;
+y = -144.000;
+}
+
+
+
+// vertex 436
+vertex
+{
+x = 112.000;
+y = -112.000;
+}
+
+
+
+// vertex 437
+vertex
+{
+x = 112.000;
+y = -144.000;
+}
+
+
+
+// vertex 438
+vertex
+{
+x = 112.000;
+y = -144.000;
+}
+
+
+
+// vertex 439
+vertex
+{
+x = 80.000;
+y = -144.000;
+}
+
+
+
+// vertex 440
+vertex
+{
+x = 144.000;
+y = -112.000;
+}
+
+
+
+// vertex 441
+vertex
+{
+x = 144.000;
+y = -144.000;
+}
+
+
+
+// vertex 442
+vertex
+{
+x = 144.000;
+y = -144.000;
+}
+
+
+
+// vertex 443
+vertex
+{
+x = 112.000;
+y = -144.000;
+}
+
+
+
+// Linedefs
+
+// linedef 0
+linedef
+{
+v1 = 0;
+v2 = 1;
+sidefront = 0;
+
+
+}
+    
+
+// linedef 1
+linedef
+{
+v1 = 1;
+v2 = 2;
+sidefront = 1;
+
+
+}
+    
+
+// linedef 2
+linedef
+{
+v1 = 2;
+v2 = 3;
+sidefront = 2;
+
+
+}
+    
+
+// linedef 3
+linedef
+{
+v1 = 3;
+v2 = 0;
+sidefront = 3;
+
+
+}
+    
+
+// linedef 4
+linedef
+{
+v1 = 4;
+v2 = 5;
+sidefront = 4;
+sideback = 8;
+twosided = true;
+}
+    
+
+// linedef 5
+linedef
+{
+v1 = 6;
+v2 = 7;
+sidefront = 5;
+sideback = 13;
+twosided = true;
+}
+    
+
+// linedef 6
+linedef
+{
+v1 = 8;
+v2 = 9;
+sidefront = 6;
+sideback = 56;
+twosided = true;
+}
+    
+
+// linedef 7
+linedef
+{
+v1 = 10;
+v2 = 11;
+sidefront = 7;
+sideback = 9;
+twosided = true;
+}
+    
+
+// linedef 8
+linedef
+{
+v1 = 12;
+v2 = 13;
+sidefront = 10;
+sideback = 14;
+twosided = true;
+}
+    
+
+// linedef 9
+linedef
+{
+v1 = 14;
+v2 = 15;
+sidefront = 11;
+sideback = 18;
+twosided = true;
+}
+    
+
+// linedef 10
+linedef
+{
+v1 = 16;
+v2 = 17;
+sidefront = 12;
+sideback = 61;
+twosided = true;
+}
+    
+
+// linedef 11
+linedef
+{
+v1 = 18;
+v2 = 19;
+sidefront = 15;
+sideback = 19;
+twosided = true;
+}
+    
+
+// linedef 12
+linedef
+{
+v1 = 20;
+v2 = 21;
+sidefront = 16;
+sideback = 23;
+twosided = true;
+}
+    
+
+// linedef 13
+linedef
+{
+v1 = 22;
+v2 = 23;
+sidefront = 17;
+sideback = 65;
+twosided = true;
+}
+    
+
+// linedef 14
+linedef
+{
+v1 = 24;
+v2 = 25;
+sidefront = 20;
+sideback = 24;
+twosided = true;
+}
+    
+
+// linedef 15
+linedef
+{
+v1 = 26;
+v2 = 27;
+sidefront = 21;
+sideback = 28;
+twosided = true;
+}
+    
+
+// linedef 16
+linedef
+{
+v1 = 28;
+v2 = 29;
+sidefront = 22;
+sideback = 69;
+twosided = true;
+}
+    
+
+// linedef 17
+linedef
+{
+v1 = 30;
+v2 = 31;
+sidefront = 25;
+sideback = 29;
+twosided = true;
+}
+    
+
+// linedef 18
+linedef
+{
+v1 = 32;
+v2 = 33;
+sidefront = 26;
+sideback = 33;
+twosided = true;
+}
+    
+
+// linedef 19
+linedef
+{
+v1 = 34;
+v2 = 35;
+sidefront = 27;
+sideback = 73;
+twosided = true;
+}
+    
+
+// linedef 20
+linedef
+{
+v1 = 36;
+v2 = 37;
+sidefront = 30;
+sideback = 34;
+twosided = true;
+}
+    
+
+// linedef 21
+linedef
+{
+v1 = 38;
+v2 = 39;
+sidefront = 31;
+sideback = 38;
+twosided = true;
+}
+    
+
+// linedef 22
+linedef
+{
+v1 = 40;
+v2 = 41;
+sidefront = 32;
+sideback = 77;
+twosided = true;
+}
+    
+
+// linedef 23
+linedef
+{
+v1 = 42;
+v2 = 43;
+sidefront = 35;
+sideback = 39;
+twosided = true;
+}
+    
+
+// linedef 24
+linedef
+{
+v1 = 44;
+v2 = 45;
+sidefront = 36;
+sideback = 43;
+twosided = true;
+}
+    
+
+// linedef 25
+linedef
+{
+v1 = 46;
+v2 = 47;
+sidefront = 37;
+sideback = 81;
+twosided = true;
+}
+    
+
+// linedef 26
+linedef
+{
+v1 = 48;
+v2 = 49;
+sidefront = 40;
+sideback = 44;
+twosided = true;
+}
+    
+
+// linedef 27
+linedef
+{
+v1 = 50;
+v2 = 51;
+sidefront = 41;
+sideback = 48;
+twosided = true;
+}
+    
+
+// linedef 28
+linedef
+{
+v1 = 52;
+v2 = 53;
+sidefront = 42;
+sideback = 85;
+twosided = true;
+}
+    
+
+// linedef 29
+linedef
+{
+v1 = 54;
+v2 = 55;
+sidefront = 45;
+sideback = 49;
+twosided = true;
+}
+    
+
+// linedef 30
+linedef
+{
+v1 = 56;
+v2 = 57;
+sidefront = 46;
+sideback = 53;
+twosided = true;
+}
+    
+
+// linedef 31
+linedef
+{
+v1 = 58;
+v2 = 59;
+sidefront = 47;
+sideback = 89;
+twosided = true;
+}
+    
+
+// linedef 32
+linedef
+{
+v1 = 60;
+v2 = 61;
+sidefront = 50;
+sideback = 54;
+twosided = true;
+}
+    
+
+// linedef 33
+linedef
+{
+v1 = 62;
+v2 = 63;
+sidefront = 51;
+sideback = 55;
+twosided = true;
+}
+    
+
+// linedef 34
+linedef
+{
+v1 = 64;
+v2 = 65;
+sidefront = 52;
+sideback = 93;
+twosided = true;
+}
+    
+
+// linedef 35
+linedef
+{
+v1 = 66;
+v2 = 67;
+sidefront = 57;
+sideback = 64;
+twosided = true;
+}
+    
+
+// linedef 36
+linedef
+{
+v1 = 68;
+v2 = 69;
+sidefront = 58;
+sideback = 98;
+twosided = true;
+}
+    
+
+// linedef 37
+linedef
+{
+v1 = 70;
+v2 = 71;
+sidefront = 59;
+sideback = 60;
+twosided = true;
+}
+    
+
+// linedef 38
+linedef
+{
+v1 = 72;
+v2 = 73;
+sidefront = 62;
+sideback = 68;
+twosided = true;
+}
+    
+
+// linedef 39
+linedef
+{
+v1 = 74;
+v2 = 75;
+sidefront = 63;
+sideback = 103;
+twosided = true;
+}
+    
+
+// linedef 40
+linedef
+{
+v1 = 76;
+v2 = 77;
+sidefront = 66;
+sideback = 72;
+twosided = true;
+}
+    
+
+// linedef 41
+linedef
+{
+v1 = 78;
+v2 = 79;
+sidefront = 67;
+sideback = 107;
+twosided = true;
+}
+    
+
+// linedef 42
+linedef
+{
+v1 = 80;
+v2 = 81;
+sidefront = 70;
+sideback = 76;
+twosided = true;
+}
+    
+
+// linedef 43
+linedef
+{
+v1 = 82;
+v2 = 83;
+sidefront = 71;
+sideback = 111;
+twosided = true;
+}
+    
+
+// linedef 44
+linedef
+{
+v1 = 84;
+v2 = 85;
+sidefront = 74;
+sideback = 80;
+twosided = true;
+}
+    
+
+// linedef 45
+linedef
+{
+v1 = 86;
+v2 = 87;
+sidefront = 75;
+sideback = 115;
+twosided = true;
+}
+    
+
+// linedef 46
+linedef
+{
+v1 = 88;
+v2 = 89;
+sidefront = 78;
+sideback = 84;
+twosided = true;
+}
+    
+
+// linedef 47
+linedef
+{
+v1 = 90;
+v2 = 91;
+sidefront = 79;
+sideback = 119;
+twosided = true;
+}
+    
+
+// linedef 48
+linedef
+{
+v1 = 92;
+v2 = 93;
+sidefront = 82;
+sideback = 88;
+twosided = true;
+}
+    
+
+// linedef 49
+linedef
+{
+v1 = 94;
+v2 = 95;
+sidefront = 83;
+sideback = 123;
+twosided = true;
+}
+    
+
+// linedef 50
+linedef
+{
+v1 = 96;
+v2 = 97;
+sidefront = 86;
+sideback = 92;
+twosided = true;
+}
+    
+
+// linedef 51
+linedef
+{
+v1 = 98;
+v2 = 99;
+sidefront = 87;
+sideback = 127;
+twosided = true;
+}
+    
+
+// linedef 52
+linedef
+{
+v1 = 100;
+v2 = 101;
+sidefront = 90;
+sideback = 96;
+twosided = true;
+}
+    
+
+// linedef 53
+linedef
+{
+v1 = 102;
+v2 = 103;
+sidefront = 91;
+sideback = 131;
+twosided = true;
+}
+    
+
+// linedef 54
+linedef
+{
+v1 = 104;
+v2 = 105;
+sidefront = 94;
+sideback = 97;
+twosided = true;
+}
+    
+
+// linedef 55
+linedef
+{
+v1 = 106;
+v2 = 107;
+sidefront = 95;
+sideback = 135;
+twosided = true;
+}
+    
+
+// linedef 56
+linedef
+{
+v1 = 108;
+v2 = 109;
+sidefront = 99;
+sideback = 106;
+twosided = true;
+}
+    
+
+// linedef 57
+linedef
+{
+v1 = 110;
+v2 = 111;
+sidefront = 100;
+sideback = 140;
+twosided = true;
+}
+    
+
+// linedef 58
+linedef
+{
+v1 = 112;
+v2 = 113;
+sidefront = 101;
+sideback = 102;
+twosided = true;
+}
+    
+
+// linedef 59
+linedef
+{
+v1 = 114;
+v2 = 115;
+sidefront = 104;
+sideback = 110;
+twosided = true;
+}
+    
+
+// linedef 60
+linedef
+{
+v1 = 116;
+v2 = 117;
+sidefront = 105;
+sideback = 145;
+twosided = true;
+}
+    
+
+// linedef 61
+linedef
+{
+v1 = 118;
+v2 = 119;
+sidefront = 108;
+sideback = 114;
+twosided = true;
+}
+    
+
+// linedef 62
+linedef
+{
+v1 = 120;
+v2 = 121;
+sidefront = 109;
+sideback = 149;
+twosided = true;
+}
+    
+
+// linedef 63
+linedef
+{
+v1 = 122;
+v2 = 123;
+sidefront = 112;
+sideback = 118;
+twosided = true;
+}
+    
+
+// linedef 64
+linedef
+{
+v1 = 124;
+v2 = 125;
+sidefront = 113;
+sideback = 153;
+twosided = true;
+}
+    
+
+// linedef 65
+linedef
+{
+v1 = 126;
+v2 = 127;
+sidefront = 116;
+sideback = 122;
+twosided = true;
+}
+    
+
+// linedef 66
+linedef
+{
+v1 = 128;
+v2 = 129;
+sidefront = 117;
+sideback = 157;
+twosided = true;
+}
+    
+
+// linedef 67
+linedef
+{
+v1 = 130;
+v2 = 131;
+sidefront = 120;
+sideback = 126;
+twosided = true;
+}
+    
+
+// linedef 68
+linedef
+{
+v1 = 132;
+v2 = 133;
+sidefront = 121;
+sideback = 161;
+twosided = true;
+}
+    
+
+// linedef 69
+linedef
+{
+v1 = 134;
+v2 = 135;
+sidefront = 124;
+sideback = 130;
+twosided = true;
+}
+    
+
+// linedef 70
+linedef
+{
+v1 = 136;
+v2 = 137;
+sidefront = 125;
+sideback = 165;
+twosided = true;
+}
+    
+
+// linedef 71
+linedef
+{
+v1 = 138;
+v2 = 139;
+sidefront = 128;
+sideback = 134;
+twosided = true;
+}
+    
+
+// linedef 72
+linedef
+{
+v1 = 140;
+v2 = 141;
+sidefront = 129;
+sideback = 169;
+twosided = true;
+}
+    
+
+// linedef 73
+linedef
+{
+v1 = 142;
+v2 = 143;
+sidefront = 132;
+sideback = 138;
+twosided = true;
+}
+    
+
+// linedef 74
+linedef
+{
+v1 = 144;
+v2 = 145;
+sidefront = 133;
+sideback = 173;
+twosided = true;
+}
+    
+
+// linedef 75
+linedef
+{
+v1 = 146;
+v2 = 147;
+sidefront = 136;
+sideback = 139;
+twosided = true;
+}
+    
+
+// linedef 76
+linedef
+{
+v1 = 148;
+v2 = 149;
+sidefront = 137;
+sideback = 177;
+twosided = true;
+}
+    
+
+// linedef 77
+linedef
+{
+v1 = 150;
+v2 = 151;
+sidefront = 141;
+sideback = 148;
+twosided = true;
+}
+    
+
+// linedef 78
+linedef
+{
+v1 = 152;
+v2 = 153;
+sidefront = 142;
+sideback = 182;
+twosided = true;
+}
+    
+
+// linedef 79
+linedef
+{
+v1 = 154;
+v2 = 155;
+sidefront = 143;
+sideback = 144;
+twosided = true;
+}
+    
+
+// linedef 80
+linedef
+{
+v1 = 156;
+v2 = 157;
+sidefront = 146;
+sideback = 152;
+twosided = true;
+}
+    
+
+// linedef 81
+linedef
+{
+v1 = 158;
+v2 = 159;
+sidefront = 147;
+sideback = 187;
+twosided = true;
+}
+    
+
+// linedef 82
+linedef
+{
+v1 = 160;
+v2 = 161;
+sidefront = 150;
+sideback = 156;
+twosided = true;
+}
+    
+
+// linedef 83
+linedef
+{
+v1 = 162;
+v2 = 163;
+sidefront = 151;
+sideback = 191;
+twosided = true;
+}
+    
+
+// linedef 84
+linedef
+{
+v1 = 164;
+v2 = 165;
+sidefront = 154;
+sideback = 160;
+twosided = true;
+}
+    
+
+// linedef 85
+linedef
+{
+v1 = 166;
+v2 = 167;
+sidefront = 155;
+sideback = 195;
+twosided = true;
+}
+    
+
+// linedef 86
+linedef
+{
+v1 = 168;
+v2 = 169;
+sidefront = 158;
+sideback = 164;
+twosided = true;
+}
+    
+
+// linedef 87
+linedef
+{
+v1 = 170;
+v2 = 171;
+sidefront = 159;
+sideback = 199;
+twosided = true;
+}
+    
+
+// linedef 88
+linedef
+{
+v1 = 172;
+v2 = 173;
+sidefront = 162;
+sideback = 168;
+twosided = true;
+}
+    
+
+// linedef 89
+linedef
+{
+v1 = 174;
+v2 = 175;
+sidefront = 163;
+sideback = 203;
+twosided = true;
+}
+    
+
+// linedef 90
+linedef
+{
+v1 = 176;
+v2 = 177;
+sidefront = 166;
+sideback = 172;
+twosided = true;
+}
+    
+
+// linedef 91
+linedef
+{
+v1 = 178;
+v2 = 179;
+sidefront = 167;
+sideback = 207;
+twosided = true;
+}
+    
+
+// linedef 92
+linedef
+{
+v1 = 180;
+v2 = 181;
+sidefront = 170;
+sideback = 176;
+twosided = true;
+}
+    
+
+// linedef 93
+linedef
+{
+v1 = 182;
+v2 = 183;
+sidefront = 171;
+sideback = 211;
+twosided = true;
+}
+    
+
+// linedef 94
+linedef
+{
+v1 = 184;
+v2 = 185;
+sidefront = 174;
+sideback = 180;
+twosided = true;
+}
+    
+
+// linedef 95
+linedef
+{
+v1 = 186;
+v2 = 187;
+sidefront = 175;
+sideback = 215;
+twosided = true;
+}
+    
+
+// linedef 96
+linedef
+{
+v1 = 188;
+v2 = 189;
+sidefront = 178;
+sideback = 181;
+twosided = true;
+}
+    
+
+// linedef 97
+linedef
+{
+v1 = 190;
+v2 = 191;
+sidefront = 179;
+sideback = 219;
+twosided = true;
+}
+    
+
+// linedef 98
+linedef
+{
+v1 = 192;
+v2 = 193;
+sidefront = 183;
+sideback = 190;
+twosided = true;
+}
+    
+
+// linedef 99
+linedef
+{
+v1 = 194;
+v2 = 195;
+sidefront = 184;
+sideback = 224;
+twosided = true;
+}
+    
+
+// linedef 100
+linedef
+{
+v1 = 196;
+v2 = 197;
+sidefront = 185;
+sideback = 186;
+twosided = true;
+}
+    
+
+// linedef 101
+linedef
+{
+v1 = 198;
+v2 = 199;
+sidefront = 188;
+sideback = 194;
+twosided = true;
+}
+    
+
+// linedef 102
+linedef
+{
+v1 = 200;
+v2 = 201;
+sidefront = 189;
+sideback = 229;
+twosided = true;
+}
+    
+
+// linedef 103
+linedef
+{
+v1 = 202;
+v2 = 203;
+sidefront = 192;
+sideback = 198;
+twosided = true;
+}
+    
+
+// linedef 104
+linedef
+{
+v1 = 204;
+v2 = 205;
+sidefront = 193;
+sideback = 233;
+twosided = true;
+}
+    
+
+// linedef 105
+linedef
+{
+v1 = 206;
+v2 = 207;
+sidefront = 196;
+sideback = 202;
+twosided = true;
+}
+    
+
+// linedef 106
+linedef
+{
+v1 = 208;
+v2 = 209;
+sidefront = 197;
+sideback = 237;
+twosided = true;
+}
+    
+
+// linedef 107
+linedef
+{
+v1 = 210;
+v2 = 211;
+sidefront = 200;
+sideback = 206;
+twosided = true;
+}
+    
+
+// linedef 108
+linedef
+{
+v1 = 212;
+v2 = 213;
+sidefront = 201;
+sideback = 241;
+twosided = true;
+}
+    
+
+// linedef 109
+linedef
+{
+v1 = 214;
+v2 = 215;
+sidefront = 204;
+sideback = 210;
+twosided = true;
+}
+    
+
+// linedef 110
+linedef
+{
+v1 = 216;
+v2 = 217;
+sidefront = 205;
+sideback = 245;
+twosided = true;
+}
+    
+
+// linedef 111
+linedef
+{
+v1 = 218;
+v2 = 219;
+sidefront = 208;
+sideback = 214;
+twosided = true;
+}
+    
+
+// linedef 112
+linedef
+{
+v1 = 220;
+v2 = 221;
+sidefront = 209;
+sideback = 249;
+twosided = true;
+}
+    
+
+// linedef 113
+linedef
+{
+v1 = 222;
+v2 = 223;
+sidefront = 212;
+sideback = 218;
+twosided = true;
+}
+    
+
+// linedef 114
+linedef
+{
+v1 = 224;
+v2 = 225;
+sidefront = 213;
+sideback = 253;
+twosided = true;
+}
+    
+
+// linedef 115
+linedef
+{
+v1 = 226;
+v2 = 227;
+sidefront = 216;
+sideback = 222;
+twosided = true;
+}
+    
+
+// linedef 116
+linedef
+{
+v1 = 228;
+v2 = 229;
+sidefront = 217;
+sideback = 257;
+twosided = true;
+}
+    
+
+// linedef 117
+linedef
+{
+v1 = 230;
+v2 = 231;
+sidefront = 220;
+sideback = 223;
+twosided = true;
+}
+    
+
+// linedef 118
+linedef
+{
+v1 = 232;
+v2 = 233;
+sidefront = 221;
+sideback = 261;
+twosided = true;
+}
+    
+
+// linedef 119
+linedef
+{
+v1 = 234;
+v2 = 235;
+sidefront = 225;
+sideback = 232;
+twosided = true;
+}
+    
+
+// linedef 120
+linedef
+{
+v1 = 236;
+v2 = 237;
+sidefront = 226;
+sideback = 266;
+twosided = true;
+}
+    
+
+// linedef 121
+linedef
+{
+v1 = 238;
+v2 = 239;
+sidefront = 227;
+sideback = 228;
+twosided = true;
+}
+    
+
+// linedef 122
+linedef
+{
+v1 = 240;
+v2 = 241;
+sidefront = 230;
+sideback = 236;
+twosided = true;
+}
+    
+
+// linedef 123
+linedef
+{
+v1 = 242;
+v2 = 243;
+sidefront = 231;
+sideback = 271;
+twosided = true;
+}
+    
+
+// linedef 124
+linedef
+{
+v1 = 244;
+v2 = 245;
+sidefront = 234;
+sideback = 240;
+twosided = true;
+}
+    
+
+// linedef 125
+linedef
+{
+v1 = 246;
+v2 = 247;
+sidefront = 235;
+sideback = 275;
+twosided = true;
+}
+    
+
+// linedef 126
+linedef
+{
+v1 = 248;
+v2 = 249;
+sidefront = 238;
+sideback = 244;
+twosided = true;
+}
+    
+
+// linedef 127
+linedef
+{
+v1 = 250;
+v2 = 251;
+sidefront = 239;
+sideback = 279;
+twosided = true;
+}
+    
+
+// linedef 128
+linedef
+{
+v1 = 252;
+v2 = 253;
+sidefront = 242;
+sideback = 248;
+twosided = true;
+}
+    
+
+// linedef 129
+linedef
+{
+v1 = 254;
+v2 = 255;
+sidefront = 243;
+sideback = 283;
+twosided = true;
+}
+    
+
+// linedef 130
+linedef
+{
+v1 = 256;
+v2 = 257;
+sidefront = 246;
+sideback = 252;
+twosided = true;
+}
+    
+
+// linedef 131
+linedef
+{
+v1 = 258;
+v2 = 259;
+sidefront = 247;
+sideback = 287;
+twosided = true;
+}
+    
+
+// linedef 132
+linedef
+{
+v1 = 260;
+v2 = 261;
+sidefront = 250;
+sideback = 256;
+twosided = true;
+}
+    
+
+// linedef 133
+linedef
+{
+v1 = 262;
+v2 = 263;
+sidefront = 251;
+sideback = 291;
+twosided = true;
+}
+    
+
+// linedef 134
+linedef
+{
+v1 = 264;
+v2 = 265;
+sidefront = 254;
+sideback = 260;
+twosided = true;
+}
+    
+
+// linedef 135
+linedef
+{
+v1 = 266;
+v2 = 267;
+sidefront = 255;
+sideback = 295;
+twosided = true;
+}
+    
+
+// linedef 136
+linedef
+{
+v1 = 268;
+v2 = 269;
+sidefront = 258;
+sideback = 264;
+twosided = true;
+}
+    
+
+// linedef 137
+linedef
+{
+v1 = 270;
+v2 = 271;
+sidefront = 259;
+sideback = 299;
+twosided = true;
+}
+    
+
+// linedef 138
+linedef
+{
+v1 = 272;
+v2 = 273;
+sidefront = 262;
+sideback = 265;
+twosided = true;
+}
+    
+
+// linedef 139
+linedef
+{
+v1 = 274;
+v2 = 275;
+sidefront = 263;
+sideback = 303;
+twosided = true;
+}
+    
+
+// linedef 140
+linedef
+{
+v1 = 276;
+v2 = 277;
+sidefront = 267;
+sideback = 274;
+twosided = true;
+}
+    
+
+// linedef 141
+linedef
+{
+v1 = 278;
+v2 = 279;
+sidefront = 268;
+sideback = 308;
+twosided = true;
+}
+    
+
+// linedef 142
+linedef
+{
+v1 = 280;
+v2 = 281;
+sidefront = 269;
+sideback = 270;
+twosided = true;
+}
+    
+
+// linedef 143
+linedef
+{
+v1 = 282;
+v2 = 283;
+sidefront = 272;
+sideback = 278;
+twosided = true;
+}
+    
+
+// linedef 144
+linedef
+{
+v1 = 284;
+v2 = 285;
+sidefront = 273;
+sideback = 313;
+twosided = true;
+}
+    
+
+// linedef 145
+linedef
+{
+v1 = 286;
+v2 = 287;
+sidefront = 276;
+sideback = 282;
+twosided = true;
+}
+    
+
+// linedef 146
+linedef
+{
+v1 = 288;
+v2 = 289;
+sidefront = 277;
+sideback = 317;
+twosided = true;
+}
+    
+
+// linedef 147
+linedef
+{
+v1 = 290;
+v2 = 291;
+sidefront = 280;
+sideback = 286;
+twosided = true;
+}
+    
+
+// linedef 148
+linedef
+{
+v1 = 292;
+v2 = 293;
+sidefront = 281;
+sideback = 321;
+twosided = true;
+}
+    
+
+// linedef 149
+linedef
+{
+v1 = 294;
+v2 = 295;
+sidefront = 284;
+sideback = 290;
+twosided = true;
+}
+    
+
+// linedef 150
+linedef
+{
+v1 = 296;
+v2 = 297;
+sidefront = 285;
+sideback = 325;
+twosided = true;
+}
+    
+
+// linedef 151
+linedef
+{
+v1 = 298;
+v2 = 299;
+sidefront = 288;
+sideback = 294;
+twosided = true;
+}
+    
+
+// linedef 152
+linedef
+{
+v1 = 300;
+v2 = 301;
+sidefront = 289;
+sideback = 329;
+twosided = true;
+}
+    
+
+// linedef 153
+linedef
+{
+v1 = 302;
+v2 = 303;
+sidefront = 292;
+sideback = 298;
+twosided = true;
+}
+    
+
+// linedef 154
+linedef
+{
+v1 = 304;
+v2 = 305;
+sidefront = 293;
+sideback = 333;
+twosided = true;
+}
+    
+
+// linedef 155
+linedef
+{
+v1 = 306;
+v2 = 307;
+sidefront = 296;
+sideback = 302;
+twosided = true;
+}
+    
+
+// linedef 156
+linedef
+{
+v1 = 308;
+v2 = 309;
+sidefront = 297;
+sideback = 337;
+twosided = true;
+}
+    
+
+// linedef 157
+linedef
+{
+v1 = 310;
+v2 = 311;
+sidefront = 300;
+sideback = 306;
+twosided = true;
+}
+    
+
+// linedef 158
+linedef
+{
+v1 = 312;
+v2 = 313;
+sidefront = 301;
+sideback = 341;
+twosided = true;
+}
+    
+
+// linedef 159
+linedef
+{
+v1 = 314;
+v2 = 315;
+sidefront = 304;
+sideback = 307;
+twosided = true;
+}
+    
+
+// linedef 160
+linedef
+{
+v1 = 316;
+v2 = 317;
+sidefront = 305;
+sideback = 345;
+twosided = true;
+}
+    
+
+// linedef 161
+linedef
+{
+v1 = 318;
+v2 = 319;
+sidefront = 309;
+sideback = 316;
+twosided = true;
+}
+    
+
+// linedef 162
+linedef
+{
+v1 = 320;
+v2 = 321;
+sidefront = 310;
+sideback = 350;
+twosided = true;
+}
+    
+
+// linedef 163
+linedef
+{
+v1 = 322;
+v2 = 323;
+sidefront = 311;
+sideback = 312;
+twosided = true;
+}
+    
+
+// linedef 164
+linedef
+{
+v1 = 324;
+v2 = 325;
+sidefront = 314;
+sideback = 320;
+twosided = true;
+}
+    
+
+// linedef 165
+linedef
+{
+v1 = 326;
+v2 = 327;
+sidefront = 315;
+sideback = 355;
+twosided = true;
+}
+    
+
+// linedef 166
+linedef
+{
+v1 = 328;
+v2 = 329;
+sidefront = 318;
+sideback = 324;
+twosided = true;
+}
+    
+
+// linedef 167
+linedef
+{
+v1 = 330;
+v2 = 331;
+sidefront = 319;
+sideback = 359;
+twosided = true;
+}
+    
+
+// linedef 168
+linedef
+{
+v1 = 332;
+v2 = 333;
+sidefront = 322;
+sideback = 328;
+twosided = true;
+}
+    
+
+// linedef 169
+linedef
+{
+v1 = 334;
+v2 = 335;
+sidefront = 323;
+sideback = 363;
+twosided = true;
+}
+    
+
+// linedef 170
+linedef
+{
+v1 = 336;
+v2 = 337;
+sidefront = 326;
+sideback = 332;
+twosided = true;
+}
+    
+
+// linedef 171
+linedef
+{
+v1 = 338;
+v2 = 339;
+sidefront = 327;
+sideback = 367;
+twosided = true;
+}
+    
+
+// linedef 172
+linedef
+{
+v1 = 340;
+v2 = 341;
+sidefront = 330;
+sideback = 336;
+twosided = true;
+}
+    
+
+// linedef 173
+linedef
+{
+v1 = 342;
+v2 = 343;
+sidefront = 331;
+sideback = 371;
+twosided = true;
+}
+    
+
+// linedef 174
+linedef
+{
+v1 = 344;
+v2 = 345;
+sidefront = 334;
+sideback = 340;
+twosided = true;
+}
+    
+
+// linedef 175
+linedef
+{
+v1 = 346;
+v2 = 347;
+sidefront = 335;
+sideback = 375;
+twosided = true;
+}
+    
+
+// linedef 176
+linedef
+{
+v1 = 348;
+v2 = 349;
+sidefront = 338;
+sideback = 344;
+twosided = true;
+}
+    
+
+// linedef 177
+linedef
+{
+v1 = 350;
+v2 = 351;
+sidefront = 339;
+sideback = 379;
+twosided = true;
+}
+    
+
+// linedef 178
+linedef
+{
+v1 = 352;
+v2 = 353;
+sidefront = 342;
+sideback = 348;
+twosided = true;
+}
+    
+
+// linedef 179
+linedef
+{
+v1 = 354;
+v2 = 355;
+sidefront = 343;
+sideback = 383;
+twosided = true;
+}
+    
+
+// linedef 180
+linedef
+{
+v1 = 356;
+v2 = 357;
+sidefront = 346;
+sideback = 349;
+twosided = true;
+}
+    
+
+// linedef 181
+linedef
+{
+v1 = 358;
+v2 = 359;
+sidefront = 347;
+sideback = 387;
+twosided = true;
+}
+    
+
+// linedef 182
+linedef
+{
+v1 = 360;
+v2 = 361;
+sidefront = 351;
+sideback = 358;
+twosided = true;
+}
+    
+
+// linedef 183
+linedef
+{
+v1 = 362;
+v2 = 363;
+sidefront = 352;
+sideback = 392;
+twosided = true;
+}
+    
+
+// linedef 184
+linedef
+{
+v1 = 364;
+v2 = 365;
+sidefront = 353;
+sideback = 354;
+twosided = true;
+}
+    
+
+// linedef 185
+linedef
+{
+v1 = 366;
+v2 = 367;
+sidefront = 356;
+sideback = 362;
+twosided = true;
+}
+    
+
+// linedef 186
+linedef
+{
+v1 = 368;
+v2 = 369;
+sidefront = 357;
+sideback = 398;
+twosided = true;
+}
+    
+
+// linedef 187
+linedef
+{
+v1 = 370;
+v2 = 371;
+sidefront = 360;
+sideback = 366;
+twosided = true;
+}
+    
+
+// linedef 188
+linedef
+{
+v1 = 372;
+v2 = 373;
+sidefront = 361;
+sideback = 403;
+twosided = true;
+}
+    
+
+// linedef 189
+linedef
+{
+v1 = 374;
+v2 = 375;
+sidefront = 364;
+sideback = 370;
+twosided = true;
+}
+    
+
+// linedef 190
+linedef
+{
+v1 = 376;
+v2 = 377;
+sidefront = 365;
+sideback = 408;
+twosided = true;
+}
+    
+
+// linedef 191
+linedef
+{
+v1 = 378;
+v2 = 379;
+sidefront = 368;
+sideback = 374;
+twosided = true;
+}
+    
+
+// linedef 192
+linedef
+{
+v1 = 380;
+v2 = 381;
+sidefront = 369;
+sideback = 413;
+twosided = true;
+}
+    
+
+// linedef 193
+linedef
+{
+v1 = 382;
+v2 = 383;
+sidefront = 372;
+sideback = 378;
+twosided = true;
+}
+    
+
+// linedef 194
+linedef
+{
+v1 = 384;
+v2 = 385;
+sidefront = 373;
+sideback = 418;
+twosided = true;
+}
+    
+
+// linedef 195
+linedef
+{
+v1 = 386;
+v2 = 387;
+sidefront = 376;
+sideback = 382;
+twosided = true;
+}
+    
+
+// linedef 196
+linedef
+{
+v1 = 388;
+v2 = 389;
+sidefront = 377;
+sideback = 423;
+twosided = true;
+}
+    
+
+// linedef 197
+linedef
+{
+v1 = 390;
+v2 = 391;
+sidefront = 380;
+sideback = 386;
+twosided = true;
+}
+    
+
+// linedef 198
+linedef
+{
+v1 = 392;
+v2 = 393;
+sidefront = 381;
+sideback = 428;
+twosided = true;
+}
+    
+
+// linedef 199
+linedef
+{
+v1 = 394;
+v2 = 395;
+sidefront = 384;
+sideback = 390;
+twosided = true;
+}
+    
+
+// linedef 200
+linedef
+{
+v1 = 396;
+v2 = 397;
+sidefront = 385;
+sideback = 433;
+twosided = true;
+}
+    
+
+// linedef 201
+linedef
+{
+v1 = 398;
+v2 = 399;
+sidefront = 388;
+sideback = 391;
+twosided = true;
+}
+    
+
+// linedef 202
+linedef
+{
+v1 = 400;
+v2 = 401;
+sidefront = 389;
+sideback = 438;
+twosided = true;
+}
+    
+
+// linedef 203
+linedef
+{
+v1 = 402;
+v2 = 403;
+sidefront = 393;
+sideback = 401;
+twosided = true;
+}
+    
+
+// linedef 204
+linedef
+{
+v1 = 404;
+v2 = 405;
+sidefront = 394;
+sideback = 396;
+twosided = true;
+}
+    
+
+// linedef 205
+linedef
+{
+v1 = 406;
+v2 = 407;
+sidefront = 395;
+sideback = 397;
+twosided = true;
+}
+    
+
+// linedef 206
+linedef
+{
+v1 = 408;
+v2 = 409;
+sidefront = 399;
+sideback = 406;
+twosided = true;
+}
+    
+
+// linedef 207
+linedef
+{
+v1 = 410;
+v2 = 411;
+sidefront = 400;
+sideback = 402;
+twosided = true;
+}
+    
+
+// linedef 208
+linedef
+{
+v1 = 412;
+v2 = 413;
+sidefront = 404;
+sideback = 411;
+twosided = true;
+}
+    
+
+// linedef 209
+linedef
+{
+v1 = 414;
+v2 = 415;
+sidefront = 405;
+sideback = 407;
+twosided = true;
+}
+    
+
+// linedef 210
+linedef
+{
+v1 = 416;
+v2 = 417;
+sidefront = 409;
+sideback = 416;
+twosided = true;
+}
+    
+
+// linedef 211
+linedef
+{
+v1 = 418;
+v2 = 419;
+sidefront = 410;
+sideback = 412;
+twosided = true;
+}
+    
+
+// linedef 212
+linedef
+{
+v1 = 420;
+v2 = 421;
+sidefront = 414;
+sideback = 421;
+twosided = true;
+}
+    
+
+// linedef 213
+linedef
+{
+v1 = 422;
+v2 = 423;
+sidefront = 415;
+sideback = 417;
+twosided = true;
+}
+    
+
+// linedef 214
+linedef
+{
+v1 = 424;
+v2 = 425;
+sidefront = 419;
+sideback = 426;
+twosided = true;
+}
+    
+
+// linedef 215
+linedef
+{
+v1 = 426;
+v2 = 427;
+sidefront = 420;
+sideback = 422;
+twosided = true;
+}
+    
+
+// linedef 216
+linedef
+{
+v1 = 428;
+v2 = 429;
+sidefront = 424;
+sideback = 431;
+twosided = true;
+}
+    
+
+// linedef 217
+linedef
+{
+v1 = 430;
+v2 = 431;
+sidefront = 425;
+sideback = 427;
+twosided = true;
+}
+    
+
+// linedef 218
+linedef
+{
+v1 = 432;
+v2 = 433;
+sidefront = 429;
+sideback = 436;
+twosided = true;
+}
+    
+
+// linedef 219
+linedef
+{
+v1 = 434;
+v2 = 435;
+sidefront = 430;
+sideback = 432;
+twosided = true;
+}
+    
+
+// linedef 220
+linedef
+{
+v1 = 436;
+v2 = 437;
+sidefront = 434;
+sideback = 441;
+twosided = true;
+}
+    
+
+// linedef 221
+linedef
+{
+v1 = 438;
+v2 = 439;
+sidefront = 435;
+sideback = 437;
+twosided = true;
+}
+    
+
+// linedef 222
+linedef
+{
+v1 = 440;
+v2 = 441;
+sidefront = 439;
+sideback = 442;
+twosided = true;
+}
+    
+
+// linedef 223
+linedef
+{
+v1 = 442;
+v2 = 443;
+sidefront = 440;
+sideback = 443;
+twosided = true;
+}
+    
+
+// Sidedefs
+
+// sidedef 0
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 1
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 2
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 3
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 4
+sidedef
+{
+sector = 1;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 5
+sidedef
+{
+sector = 1;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 6
+sidedef
+{
+sector = 1;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 7
+sidedef
+{
+sector = 1;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 8
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 9
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 10
+sidedef
+{
+sector = 2;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 11
+sidedef
+{
+sector = 2;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 12
+sidedef
+{
+sector = 2;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 13
+sidedef
+{
+sector = 2;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 14
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 15
+sidedef
+{
+sector = 3;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 16
+sidedef
+{
+sector = 3;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 17
+sidedef
+{
+sector = 3;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 18
+sidedef
+{
+sector = 3;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 19
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 20
+sidedef
+{
+sector = 4;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 21
+sidedef
+{
+sector = 4;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 22
+sidedef
+{
+sector = 4;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 23
+sidedef
+{
+sector = 4;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 24
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 25
+sidedef
+{
+sector = 5;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 26
+sidedef
+{
+sector = 5;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 27
+sidedef
+{
+sector = 5;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 28
+sidedef
+{
+sector = 5;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 29
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 30
+sidedef
+{
+sector = 6;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 31
+sidedef
+{
+sector = 6;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 32
+sidedef
+{
+sector = 6;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 33
+sidedef
+{
+sector = 6;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 34
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 35
+sidedef
+{
+sector = 7;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 36
+sidedef
+{
+sector = 7;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 37
+sidedef
+{
+sector = 7;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 38
+sidedef
+{
+sector = 7;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 39
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 40
+sidedef
+{
+sector = 8;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 41
+sidedef
+{
+sector = 8;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 42
+sidedef
+{
+sector = 8;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 43
+sidedef
+{
+sector = 8;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 44
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 45
+sidedef
+{
+sector = 9;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 46
+sidedef
+{
+sector = 9;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 47
+sidedef
+{
+sector = 9;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 48
+sidedef
+{
+sector = 9;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 49
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 50
+sidedef
+{
+sector = 10;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 51
+sidedef
+{
+sector = 10;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 52
+sidedef
+{
+sector = 10;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 53
+sidedef
+{
+sector = 10;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 54
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 55
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 56
+sidedef
+{
+sector = 11;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 57
+sidedef
+{
+sector = 11;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 58
+sidedef
+{
+sector = 11;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 59
+sidedef
+{
+sector = 11;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 60
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 61
+sidedef
+{
+sector = 12;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 62
+sidedef
+{
+sector = 12;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 63
+sidedef
+{
+sector = 12;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 64
+sidedef
+{
+sector = 12;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 65
+sidedef
+{
+sector = 13;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 66
+sidedef
+{
+sector = 13;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 67
+sidedef
+{
+sector = 13;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 68
+sidedef
+{
+sector = 13;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 69
+sidedef
+{
+sector = 14;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 70
+sidedef
+{
+sector = 14;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 71
+sidedef
+{
+sector = 14;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 72
+sidedef
+{
+sector = 14;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 73
+sidedef
+{
+sector = 15;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 74
+sidedef
+{
+sector = 15;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 75
+sidedef
+{
+sector = 15;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 76
+sidedef
+{
+sector = 15;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 77
+sidedef
+{
+sector = 16;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 78
+sidedef
+{
+sector = 16;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 79
+sidedef
+{
+sector = 16;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 80
+sidedef
+{
+sector = 16;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 81
+sidedef
+{
+sector = 17;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 82
+sidedef
+{
+sector = 17;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 83
+sidedef
+{
+sector = 17;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 84
+sidedef
+{
+sector = 17;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 85
+sidedef
+{
+sector = 18;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 86
+sidedef
+{
+sector = 18;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 87
+sidedef
+{
+sector = 18;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 88
+sidedef
+{
+sector = 18;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 89
+sidedef
+{
+sector = 19;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 90
+sidedef
+{
+sector = 19;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 91
+sidedef
+{
+sector = 19;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 92
+sidedef
+{
+sector = 19;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 93
+sidedef
+{
+sector = 20;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 94
+sidedef
+{
+sector = 20;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 95
+sidedef
+{
+sector = 20;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 96
+sidedef
+{
+sector = 20;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 97
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 98
+sidedef
+{
+sector = 21;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 99
+sidedef
+{
+sector = 21;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 100
+sidedef
+{
+sector = 21;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 101
+sidedef
+{
+sector = 21;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 102
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 103
+sidedef
+{
+sector = 22;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 104
+sidedef
+{
+sector = 22;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 105
+sidedef
+{
+sector = 22;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 106
+sidedef
+{
+sector = 22;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 107
+sidedef
+{
+sector = 23;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 108
+sidedef
+{
+sector = 23;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 109
+sidedef
+{
+sector = 23;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 110
+sidedef
+{
+sector = 23;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 111
+sidedef
+{
+sector = 24;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 112
+sidedef
+{
+sector = 24;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 113
+sidedef
+{
+sector = 24;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 114
+sidedef
+{
+sector = 24;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 115
+sidedef
+{
+sector = 25;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 116
+sidedef
+{
+sector = 25;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 117
+sidedef
+{
+sector = 25;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 118
+sidedef
+{
+sector = 25;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 119
+sidedef
+{
+sector = 26;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 120
+sidedef
+{
+sector = 26;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 121
+sidedef
+{
+sector = 26;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 122
+sidedef
+{
+sector = 26;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 123
+sidedef
+{
+sector = 27;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 124
+sidedef
+{
+sector = 27;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 125
+sidedef
+{
+sector = 27;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 126
+sidedef
+{
+sector = 27;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 127
+sidedef
+{
+sector = 28;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 128
+sidedef
+{
+sector = 28;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 129
+sidedef
+{
+sector = 28;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 130
+sidedef
+{
+sector = 28;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 131
+sidedef
+{
+sector = 29;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 132
+sidedef
+{
+sector = 29;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 133
+sidedef
+{
+sector = 29;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 134
+sidedef
+{
+sector = 29;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 135
+sidedef
+{
+sector = 30;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 136
+sidedef
+{
+sector = 30;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 137
+sidedef
+{
+sector = 30;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 138
+sidedef
+{
+sector = 30;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 139
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 140
+sidedef
+{
+sector = 31;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 141
+sidedef
+{
+sector = 31;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 142
+sidedef
+{
+sector = 31;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 143
+sidedef
+{
+sector = 31;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 144
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 145
+sidedef
+{
+sector = 32;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 146
+sidedef
+{
+sector = 32;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 147
+sidedef
+{
+sector = 32;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 148
+sidedef
+{
+sector = 32;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 149
+sidedef
+{
+sector = 33;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 150
+sidedef
+{
+sector = 33;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 151
+sidedef
+{
+sector = 33;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 152
+sidedef
+{
+sector = 33;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 153
+sidedef
+{
+sector = 34;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 154
+sidedef
+{
+sector = 34;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 155
+sidedef
+{
+sector = 34;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 156
+sidedef
+{
+sector = 34;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 157
+sidedef
+{
+sector = 35;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 158
+sidedef
+{
+sector = 35;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 159
+sidedef
+{
+sector = 35;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 160
+sidedef
+{
+sector = 35;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 161
+sidedef
+{
+sector = 36;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 162
+sidedef
+{
+sector = 36;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 163
+sidedef
+{
+sector = 36;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 164
+sidedef
+{
+sector = 36;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 165
+sidedef
+{
+sector = 37;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 166
+sidedef
+{
+sector = 37;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 167
+sidedef
+{
+sector = 37;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 168
+sidedef
+{
+sector = 37;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 169
+sidedef
+{
+sector = 38;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 170
+sidedef
+{
+sector = 38;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 171
+sidedef
+{
+sector = 38;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 172
+sidedef
+{
+sector = 38;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 173
+sidedef
+{
+sector = 39;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 174
+sidedef
+{
+sector = 39;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 175
+sidedef
+{
+sector = 39;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 176
+sidedef
+{
+sector = 39;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 177
+sidedef
+{
+sector = 40;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 178
+sidedef
+{
+sector = 40;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 179
+sidedef
+{
+sector = 40;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 180
+sidedef
+{
+sector = 40;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 181
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 182
+sidedef
+{
+sector = 41;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 183
+sidedef
+{
+sector = 41;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 184
+sidedef
+{
+sector = 41;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 185
+sidedef
+{
+sector = 41;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 186
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 187
+sidedef
+{
+sector = 42;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 188
+sidedef
+{
+sector = 42;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 189
+sidedef
+{
+sector = 42;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 190
+sidedef
+{
+sector = 42;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 191
+sidedef
+{
+sector = 43;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 192
+sidedef
+{
+sector = 43;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 193
+sidedef
+{
+sector = 43;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 194
+sidedef
+{
+sector = 43;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 195
+sidedef
+{
+sector = 44;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 196
+sidedef
+{
+sector = 44;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 197
+sidedef
+{
+sector = 44;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 198
+sidedef
+{
+sector = 44;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 199
+sidedef
+{
+sector = 45;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 200
+sidedef
+{
+sector = 45;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 201
+sidedef
+{
+sector = 45;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 202
+sidedef
+{
+sector = 45;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 203
+sidedef
+{
+sector = 46;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 204
+sidedef
+{
+sector = 46;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 205
+sidedef
+{
+sector = 46;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 206
+sidedef
+{
+sector = 46;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 207
+sidedef
+{
+sector = 47;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 208
+sidedef
+{
+sector = 47;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 209
+sidedef
+{
+sector = 47;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 210
+sidedef
+{
+sector = 47;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 211
+sidedef
+{
+sector = 48;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 212
+sidedef
+{
+sector = 48;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 213
+sidedef
+{
+sector = 48;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 214
+sidedef
+{
+sector = 48;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 215
+sidedef
+{
+sector = 49;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 216
+sidedef
+{
+sector = 49;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 217
+sidedef
+{
+sector = 49;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 218
+sidedef
+{
+sector = 49;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 219
+sidedef
+{
+sector = 50;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 220
+sidedef
+{
+sector = 50;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 221
+sidedef
+{
+sector = 50;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 222
+sidedef
+{
+sector = 50;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 223
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 224
+sidedef
+{
+sector = 51;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 225
+sidedef
+{
+sector = 51;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 226
+sidedef
+{
+sector = 51;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 227
+sidedef
+{
+sector = 51;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 228
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 229
+sidedef
+{
+sector = 52;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 230
+sidedef
+{
+sector = 52;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 231
+sidedef
+{
+sector = 52;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 232
+sidedef
+{
+sector = 52;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 233
+sidedef
+{
+sector = 53;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 234
+sidedef
+{
+sector = 53;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 235
+sidedef
+{
+sector = 53;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 236
+sidedef
+{
+sector = 53;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 237
+sidedef
+{
+sector = 54;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 238
+sidedef
+{
+sector = 54;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 239
+sidedef
+{
+sector = 54;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 240
+sidedef
+{
+sector = 54;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 241
+sidedef
+{
+sector = 55;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 242
+sidedef
+{
+sector = 55;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 243
+sidedef
+{
+sector = 55;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 244
+sidedef
+{
+sector = 55;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 245
+sidedef
+{
+sector = 56;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 246
+sidedef
+{
+sector = 56;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 247
+sidedef
+{
+sector = 56;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 248
+sidedef
+{
+sector = 56;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 249
+sidedef
+{
+sector = 57;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 250
+sidedef
+{
+sector = 57;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 251
+sidedef
+{
+sector = 57;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 252
+sidedef
+{
+sector = 57;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 253
+sidedef
+{
+sector = 58;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 254
+sidedef
+{
+sector = 58;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 255
+sidedef
+{
+sector = 58;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 256
+sidedef
+{
+sector = 58;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 257
+sidedef
+{
+sector = 59;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 258
+sidedef
+{
+sector = 59;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 259
+sidedef
+{
+sector = 59;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 260
+sidedef
+{
+sector = 59;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 261
+sidedef
+{
+sector = 60;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 262
+sidedef
+{
+sector = 60;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 263
+sidedef
+{
+sector = 60;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 264
+sidedef
+{
+sector = 60;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 265
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 266
+sidedef
+{
+sector = 61;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 267
+sidedef
+{
+sector = 61;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 268
+sidedef
+{
+sector = 61;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 269
+sidedef
+{
+sector = 61;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 270
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 271
+sidedef
+{
+sector = 62;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 272
+sidedef
+{
+sector = 62;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 273
+sidedef
+{
+sector = 62;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 274
+sidedef
+{
+sector = 62;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 275
+sidedef
+{
+sector = 63;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 276
+sidedef
+{
+sector = 63;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 277
+sidedef
+{
+sector = 63;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 278
+sidedef
+{
+sector = 63;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 279
+sidedef
+{
+sector = 64;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 280
+sidedef
+{
+sector = 64;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 281
+sidedef
+{
+sector = 64;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 282
+sidedef
+{
+sector = 64;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 283
+sidedef
+{
+sector = 65;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 284
+sidedef
+{
+sector = 65;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 285
+sidedef
+{
+sector = 65;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 286
+sidedef
+{
+sector = 65;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 287
+sidedef
+{
+sector = 66;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 288
+sidedef
+{
+sector = 66;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 289
+sidedef
+{
+sector = 66;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 290
+sidedef
+{
+sector = 66;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 291
+sidedef
+{
+sector = 67;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 292
+sidedef
+{
+sector = 67;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 293
+sidedef
+{
+sector = 67;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 294
+sidedef
+{
+sector = 67;
+texturemiddle = "0F00";
+texturebottom = "0F00";
+}
+    
+
+// sidedef 295
+sidedef
+{
+sector = 68;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 296
+sidedef
+{
+sector = 68;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 297
+sidedef
+{
+sector = 68;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 298
+sidedef
+{
+sector = 68;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 299
+sidedef
+{
+sector = 69;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 300
+sidedef
+{
+sector = 69;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 301
+sidedef
+{
+sector = 69;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 302
+sidedef
+{
+sector = 69;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 303
+sidedef
+{
+sector = 70;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 304
+sidedef
+{
+sector = 70;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 305
+sidedef
+{
+sector = 70;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 306
+sidedef
+{
+sector = 70;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 307
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 308
+sidedef
+{
+sector = 71;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 309
+sidedef
+{
+sector = 71;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 310
+sidedef
+{
+sector = 71;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 311
+sidedef
+{
+sector = 71;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 312
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 313
+sidedef
+{
+sector = 72;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 314
+sidedef
+{
+sector = 72;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 315
+sidedef
+{
+sector = 72;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 316
+sidedef
+{
+sector = 72;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 317
+sidedef
+{
+sector = 73;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 318
+sidedef
+{
+sector = 73;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 319
+sidedef
+{
+sector = 73;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 320
+sidedef
+{
+sector = 73;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 321
+sidedef
+{
+sector = 74;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 322
+sidedef
+{
+sector = 74;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 323
+sidedef
+{
+sector = 74;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 324
+sidedef
+{
+sector = 74;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 325
+sidedef
+{
+sector = 75;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 326
+sidedef
+{
+sector = 75;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 327
+sidedef
+{
+sector = 75;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 328
+sidedef
+{
+sector = 75;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 329
+sidedef
+{
+sector = 76;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 330
+sidedef
+{
+sector = 76;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 331
+sidedef
+{
+sector = 76;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 332
+sidedef
+{
+sector = 76;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 333
+sidedef
+{
+sector = 77;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 334
+sidedef
+{
+sector = 77;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 335
+sidedef
+{
+sector = 77;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 336
+sidedef
+{
+sector = 77;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 337
+sidedef
+{
+sector = 78;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 338
+sidedef
+{
+sector = 78;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 339
+sidedef
+{
+sector = 78;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 340
+sidedef
+{
+sector = 78;
+texturemiddle = "0FF0";
+texturebottom = "0FF0";
+}
+    
+
+// sidedef 341
+sidedef
+{
+sector = 79;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 342
+sidedef
+{
+sector = 79;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 343
+sidedef
+{
+sector = 79;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 344
+sidedef
+{
+sector = 79;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 345
+sidedef
+{
+sector = 80;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 346
+sidedef
+{
+sector = 80;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 347
+sidedef
+{
+sector = 80;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 348
+sidedef
+{
+sector = 80;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 349
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 350
+sidedef
+{
+sector = 81;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 351
+sidedef
+{
+sector = 81;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 352
+sidedef
+{
+sector = 81;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 353
+sidedef
+{
+sector = 81;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 354
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 355
+sidedef
+{
+sector = 82;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 356
+sidedef
+{
+sector = 82;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 357
+sidedef
+{
+sector = 82;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 358
+sidedef
+{
+sector = 82;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 359
+sidedef
+{
+sector = 83;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 360
+sidedef
+{
+sector = 83;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 361
+sidedef
+{
+sector = 83;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 362
+sidedef
+{
+sector = 83;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 363
+sidedef
+{
+sector = 84;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 364
+sidedef
+{
+sector = 84;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 365
+sidedef
+{
+sector = 84;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 366
+sidedef
+{
+sector = 84;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 367
+sidedef
+{
+sector = 85;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 368
+sidedef
+{
+sector = 85;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 369
+sidedef
+{
+sector = 85;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 370
+sidedef
+{
+sector = 85;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 371
+sidedef
+{
+sector = 86;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 372
+sidedef
+{
+sector = 86;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 373
+sidedef
+{
+sector = 86;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 374
+sidedef
+{
+sector = 86;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 375
+sidedef
+{
+sector = 87;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 376
+sidedef
+{
+sector = 87;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 377
+sidedef
+{
+sector = 87;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 378
+sidedef
+{
+sector = 87;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 379
+sidedef
+{
+sector = 88;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 380
+sidedef
+{
+sector = 88;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 381
+sidedef
+{
+sector = 88;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 382
+sidedef
+{
+sector = 88;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 383
+sidedef
+{
+sector = 89;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 384
+sidedef
+{
+sector = 89;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 385
+sidedef
+{
+sector = 89;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 386
+sidedef
+{
+sector = 89;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 387
+sidedef
+{
+sector = 90;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 388
+sidedef
+{
+sector = 90;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 389
+sidedef
+{
+sector = 90;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 390
+sidedef
+{
+sector = 90;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 391
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 392
+sidedef
+{
+sector = 91;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 393
+sidedef
+{
+sector = 91;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 394
+sidedef
+{
+sector = 91;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 395
+sidedef
+{
+sector = 91;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 396
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 397
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 398
+sidedef
+{
+sector = 92;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 399
+sidedef
+{
+sector = 92;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 400
+sidedef
+{
+sector = 92;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 401
+sidedef
+{
+sector = 92;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 402
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 403
+sidedef
+{
+sector = 93;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 404
+sidedef
+{
+sector = 93;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 405
+sidedef
+{
+sector = 93;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 406
+sidedef
+{
+sector = 93;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 407
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 408
+sidedef
+{
+sector = 94;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 409
+sidedef
+{
+sector = 94;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 410
+sidedef
+{
+sector = 94;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 411
+sidedef
+{
+sector = 94;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 412
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 413
+sidedef
+{
+sector = 95;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 414
+sidedef
+{
+sector = 95;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 415
+sidedef
+{
+sector = 95;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 416
+sidedef
+{
+sector = 95;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 417
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 418
+sidedef
+{
+sector = 96;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 419
+sidedef
+{
+sector = 96;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 420
+sidedef
+{
+sector = 96;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 421
+sidedef
+{
+sector = 96;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 422
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 423
+sidedef
+{
+sector = 97;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 424
+sidedef
+{
+sector = 97;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 425
+sidedef
+{
+sector = 97;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 426
+sidedef
+{
+sector = 97;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 427
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 428
+sidedef
+{
+sector = 98;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 429
+sidedef
+{
+sector = 98;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 430
+sidedef
+{
+sector = 98;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 431
+sidedef
+{
+sector = 98;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 432
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 433
+sidedef
+{
+sector = 99;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 434
+sidedef
+{
+sector = 99;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 435
+sidedef
+{
+sector = 99;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 436
+sidedef
+{
+sector = 99;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 437
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 438
+sidedef
+{
+sector = 100;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 439
+sidedef
+{
+sector = 100;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 440
+sidedef
+{
+sector = 100;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 441
+sidedef
+{
+sector = 100;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 442
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// sidedef 443
+sidedef
+{
+sector = 0;
+texturemiddle = "0000";
+texturebottom = "0000";
+}
+    
+
+// Sectors
+
+// sector 0
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = -64;
+}
+
+
+// sector 1
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 2
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 3
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 4
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 5
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 6
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 7
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 8
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 9
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 10
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 11
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 12
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 13
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 14
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 15
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 16
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 17
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 18
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 19
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 20
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 21
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 22
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 23
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 24
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 25
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 26
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 27
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 28
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 29
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 30
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 31
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 32
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 33
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 34
+sector
+{
+texturefloor = "0F00";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 35
+sector
+{
+texturefloor = "0F00";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 36
+sector
+{
+texturefloor = "0F00";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 37
+sector
+{
+texturefloor = "0F00";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 38
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 39
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 40
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 41
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 42
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 43
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 44
+sector
+{
+texturefloor = "0F00";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 45
+sector
+{
+texturefloor = "0F00";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 46
+sector
+{
+texturefloor = "0F00";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 47
+sector
+{
+texturefloor = "0F00";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 48
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 49
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 50
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 51
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 52
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 53
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 54
+sector
+{
+texturefloor = "0F00";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 55
+sector
+{
+texturefloor = "0F00";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 56
+sector
+{
+texturefloor = "0F00";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 57
+sector
+{
+texturefloor = "0F00";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 58
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 59
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 60
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 61
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 62
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 63
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 64
+sector
+{
+texturefloor = "0F00";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 65
+sector
+{
+texturefloor = "0F00";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 66
+sector
+{
+texturefloor = "0F00";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 67
+sector
+{
+texturefloor = "0F00";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 68
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 69
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 70
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 71
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 72
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 73
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 74
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 75
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 76
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 77
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 78
+sector
+{
+texturefloor = "0FF0";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 79
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 80
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 81
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 82
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 83
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 84
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 85
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 86
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 87
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 88
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 89
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 90
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 91
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 92
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 93
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 94
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 95
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 96
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 97
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 98
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 99
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+
+// sector 100
+sector
+{
+texturefloor = "0000";
+textureceiling = "0000";
+heightceiling = 320;
+heightfloor = 32;
+}
+
+  
+  
