@@ -169,6 +169,6 @@ class Ship : Actor {
     SetOrigin((pos.x + (Sin(forwardAngle) * movement.x) + (Cos(forwardAngle) * throttle / 20), pos.y - (Cos(forwardAngle) * movement.x) + (Sin(forwardAngle) * throttle / 20), pos.z - movement.y), true);
 
     PlayerInfo p = players[consoleplayer];
-    p.mo.SetOrigin((pos.x - (Cos(forwardAngle) * 200), pos.y - (Sin(forwardAngle) * 200), 0), true);
+    p.mo.SetOrigin((pos.x - (Cos(forwardAngle) * 200), pos.y - (Sin(forwardAngle) * 200), pos.z + 20), true);
   }
 }
