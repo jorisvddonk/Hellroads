@@ -36,10 +36,6 @@ interface Pixel {
   own_E?: boolean;
   own_S?: boolean;
   own_W?: boolean;
-  border_N?: boolean;
-  border_E?: boolean;
-  border_S?: boolean;
-  border_W?: boolean;
   sector?: Sector;
   sid_N?: Sidedef;
   sid_E?: Sidedef;
@@ -73,13 +69,19 @@ const generateStuffFromimage = function(img: IJimp) {
     "0000"
   );
 
+  const transform = (x: number, y: number, img: IJimp) => {
+    const X = x - img.bitmap.width / 2;
+    const Y = img.bitmap.height / 2 - y;
+    return {
+      XS: X * SCALE,
+      YS: Y * SCALE
+    };
+  };
+
   img.scanQuiet(0, 0, img.bitmap.width, img.bitmap.height, (x, y, idx) => {
     const color = img.getPixelColor(x, y);
     const sprite = getSpriteName(color);
-    const X = x - img.bitmap.width / 2;
-    const Y = img.bitmap.height / 2 - y;
-    const XS = X * SCALE;
-    const YS = Y * SCALE;
+    const { XS, YS } = transform(x, y, img);
 
     if (sprite != "0000") {
       pixels.push({
@@ -214,7 +216,8 @@ const generateStuffFromimage = function(img: IJimp) {
     }
   });
 
-  const udmfText = generateUDMF();
+  const { XS, YS } = transform(0, Math.floor(img.bitmap.height / 2), img);
+  const udmfText = generateUDMF(XS, YS);
   const w = WAD.WAD.read(fs.readFileSync("./base.wad"));
   const mapLump = w.lumps.find(l => l.name === "TEXTMAP");
   mapLump.data = Buffer.from(udmfText, "utf8");

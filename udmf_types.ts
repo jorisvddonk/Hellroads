@@ -144,13 +144,13 @@ heightfloor = ${this.heightfloor};
   }
 }
 
-export const generateUDMF = () => {
+export const generateUDMF = (startx?: number, starty?: number) => {
   return `
 namespace = "zdoom";
 thing
 {
-x = 96.000;
-y = -32.000;
+x = ${n(startx !== undefined ? startx : 0)};
+y = ${n(starty !== undefined ? starty : 0)};
 type = 1;
 skill1 = true;
 skill2 = true;
