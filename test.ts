@@ -221,7 +221,7 @@ const generateStuffFromimage = function(img: IJimp) {
   const w = WAD.WAD.read(fs.readFileSync("./base.wad"));
   const mapLump = w.lumps.find(l => l.name === "TEXTMAP");
   mapLump.data = Buffer.from(udmfText, "utf8");
-  fs.writeFileSync("test.wad", w.write());
+  fs.writeFileSync("hellroads_maps.wad", w.write());
 };
 
 Jimp.read("./lvl.png")
