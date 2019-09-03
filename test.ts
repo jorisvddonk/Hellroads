@@ -59,9 +59,15 @@ const addPixel = (pixel: Pixel) => {
   pixels.set(pixel.y, M);
 };
 class PixelIterator implements Iterable<Pixel> {
-  constructor(public pixels: Map<number, Map<number, Pixel>>) {}
+  constructor(
+    public img: IJimp,
+    public pixels: Map<number, Map<number, Pixel>>
+  ) {}
 
   [Symbol.iterator]() {
+    let pixels = this.pixels;
+    let maxX = this.img.bitmap.width;
+    let maxY = this.img.bitmap.height;
     return {
       try: function(x, y) {
         let M = pixels.get(y);
@@ -74,16 +80,14 @@ class PixelIterator implements Iterable<Pixel> {
       },
       next: function() {
         let retval;
-
-        retval = this.try(this.x, this.y);
-        if (retval !== undefined) {
-          this.x = this.x + 1;
-          return retval;
+        while (retval === undefined && this.x <= maxX && this.y <= maxY) {
+          retval = this.try(this.x, this.y);
+          this.x += 1;
+          if (this.x >= maxX + 1) {
+            this.x = 0;
+            this.y += 1;
+          }
         }
-        this.x = 0;
-        this.y = this.y + 1;
-
-        retval = this.try(this.x, this.y);
         if (retval !== undefined) {
           return retval;
         } else {
@@ -146,7 +150,7 @@ const generateStuffFromimage = function(img: IJimp) {
   const vertices = [];
   const linedefs = [];
 
-  for (var pixel of new PixelIterator(pixels)) {
+  for (var pixel of new PixelIterator(img, pixels)) {
     // create vertices and linedefs for all pixels
 
     let needs_N = false;
@@ -231,7 +235,7 @@ const generateStuffFromimage = function(img: IJimp) {
     }
   }
 
-  for (var pixel of new PixelIterator(pixels)) {
+  for (var pixel of new PixelIterator(img, pixels)) {
     // create sectors and sidedefs for all pxels
     pixel.sector = new Sector(pixel.sprite, 10 * SCALE, 0.5 * SCALE);
     pixel.sid_N = new Sidedef(pixel.sector, pixel.sprite);
