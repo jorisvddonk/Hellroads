@@ -81,10 +81,10 @@ class Ship : Actor {
   void setMovement() {
     float xspd = 0;
     if (movingLeft) {
-      xspd -= 3;
+      xspd -= 5;
     }
     if (movingRight) {
-      xspd += 3;
+      xspd += 5;
     }
     movement = (xspd, movement.y);
   }
@@ -102,7 +102,7 @@ class Ship : Actor {
 
   void jump() {
     if (falling == false) {
-      movement = (movement.x, -15.0);
+      movement = (movement.x, -9.0);
       falling = true;
     }
   }
@@ -117,8 +117,8 @@ class Ship : Actor {
     Super.Tick();
 
     throttle = throttle + throttleDelta;
-    if (throttle > 100) {
-      throttle = 100;
+    if (throttle > 300) {
+      throttle = 300;
     }
     if (throttle < 0) {
       throttle = 0;
