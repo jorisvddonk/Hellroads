@@ -36,21 +36,22 @@ const getRef = (type: RefType, r: UDMFObject) => {
 
 ////////
 
-export class Vertex implements UDMFObject {
-  constructor(public x: number, public y: number) {
-    const existing = Array.from(reffables.get(RefType.VERTEX) || []).find(
-      (v: Vertex) => {
-        v.x === x && v.y === y;
-      }
-    );
-    if (existing) {
-      return existing as Vertex;
-    }
-    mkRef(RefType.VERTEX, this);
+const vertexMap = new Map<String, Vertex>();
+export function NewVertex(x: number, y: number) {
+  const key = `${x}/${y}`;
+  const existing = vertexMap.get(key);
+  if (existing) {
+    return existing;
+  } else {
+    const vertex = new Vertex(x, y);
+    vertexMap.set(key, vertex);
+    return vertex;
   }
-
-  get ref() {
-    return getRef(RefType.VERTEX, this);
+}
+export class Vertex implements UDMFObject {
+  public ref: number;
+  constructor(public x: number, public y: number) {
+    mkRef(RefType.VERTEX, this);
   }
 
   serialize() {
@@ -67,6 +68,7 @@ y = ${n(this.y)};
 }
 
 export class Linedef implements UDMFObject {
+  public ref: number;
   constructor(
     public v1: Vertex,
     public v2: Vertex,
@@ -74,10 +76,6 @@ export class Linedef implements UDMFObject {
     public sideback?: Sidedef
   ) {
     mkRef(RefType.LINEDEF, this);
-  }
-
-  get ref() {
-    return getRef(RefType.LINEDEF, this);
   }
 
   serialize() {
@@ -96,12 +94,9 @@ ${this.sideback && this.sidefront ? "twosided = true;" : ""}
 }
 
 export class Sidedef implements UDMFObject {
+  public ref: number;
   constructor(public sector: Sector, public texturemiddle?: string) {
     mkRef(RefType.SIDEDEF, this);
-  }
-
-  get ref() {
-    return getRef(RefType.SIDEDEF, this);
   }
 
   serialize() {
@@ -118,16 +113,13 @@ ${this.texturemiddle ? `texturebottom = "${this.texturemiddle}";` : ""}
 }
 
 export class Sector implements UDMFObject {
+  public ref: number;
   constructor(
     public texturefloor: string,
     public heightceiling: number,
     public heightfloor: number
   ) {
     mkRef(RefType.SECTOR, this);
-  }
-
-  get ref() {
-    return getRef(RefType.SECTOR, this);
   }
 
   serialize() {
@@ -145,6 +137,29 @@ heightfloor = ${this.heightfloor};
 }
 
 export const generateUDMF = (startx?: number, starty?: number) => {
+  // set refs on all objects
+  let i: number;
+  i = 0;
+  for (var x of reffables.get(RefType.VERTEX)) {
+    x.ref = i;
+    i += 1;
+  }
+  i = 0;
+  for (var x of reffables.get(RefType.LINEDEF)) {
+    x.ref = i;
+    i += 1;
+  }
+  i = 0;
+  for (var x of reffables.get(RefType.SIDEDEF)) {
+    x.ref = i;
+    i += 1;
+  }
+  i = 0;
+  for (var x of reffables.get(RefType.SECTOR)) {
+    x.ref = i;
+    i += 1;
+  }
+
   return `
 namespace = "zdoom";
 thing

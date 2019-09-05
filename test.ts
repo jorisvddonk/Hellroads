@@ -9,7 +9,8 @@ import {
   Linedef,
   Vertex,
   reffables,
-  RefType
+  RefType,
+  NewVertex
 } from "./udmf_types";
 
 const getSpriteName = (color: number) => {
@@ -101,20 +102,21 @@ class PixelIterator implements Iterable<Pixel> {
 }
 
 const generateStuffFromimage = function(img: IJimp) {
+  console.log("Generating room0..");
   const sector0 = generateRoom(
-    new Vertex(
+    NewVertex(
       -img.bitmap.width * SCALE * 1.25,
       img.bitmap.height * SCALE * 1.25
     ),
-    new Vertex(
+    NewVertex(
       img.bitmap.width * SCALE * 1.25,
       img.bitmap.height * SCALE * 1.25
     ),
-    new Vertex(
+    NewVertex(
       img.bitmap.width * SCALE * 1.25,
       -img.bitmap.height * SCALE * 1.25
     ),
-    new Vertex(
+    NewVertex(
       -img.bitmap.width * SCALE * 1.25,
       -img.bitmap.height * SCALE * 1.25
     ),
@@ -130,6 +132,7 @@ const generateStuffFromimage = function(img: IJimp) {
     };
   };
 
+  console.log("Scanning image; first pass");
   img.scanQuiet(0, 0, img.bitmap.width, img.bitmap.height, (x, y, idx) => {
     const color = img.getPixelColor(x, y);
     const sprite = getSpriteName(color);
@@ -150,6 +153,7 @@ const generateStuffFromimage = function(img: IJimp) {
   const vertices = [];
   const linedefs = [];
 
+  console.log("Building pixels (1)...");
   for (var pixel of new PixelIterator(img, pixels)) {
     // create vertices and linedefs for all pixels
 
@@ -179,8 +183,8 @@ const generateStuffFromimage = function(img: IJimp) {
     const O = 1 * (SCALE * 0.5 * 1);
 
     if (needs_N) {
-      const v0 = new Vertex(pixel.XS - O, pixel.YS + O);
-      const v1 = new Vertex(pixel.XS + O, pixel.YS + O);
+      const v0 = NewVertex(pixel.XS - O, pixel.YS + O);
+      const v1 = NewVertex(pixel.XS + O, pixel.YS + O);
       const line = new Linedef(v0, v1);
       pixel.lin_N = line;
       pixel.own_N = true;
@@ -193,8 +197,8 @@ const generateStuffFromimage = function(img: IJimp) {
     }
 
     if (needs_E) {
-      const v0 = new Vertex(pixel.XS + O, pixel.YS + O);
-      const v1 = new Vertex(pixel.XS + O, pixel.YS - O);
+      const v0 = NewVertex(pixel.XS + O, pixel.YS + O);
+      const v1 = NewVertex(pixel.XS + O, pixel.YS - O);
       const line = new Linedef(v0, v1);
       pixel.lin_E = line;
       pixel.own_E = true;
@@ -207,8 +211,8 @@ const generateStuffFromimage = function(img: IJimp) {
     }
 
     if (needs_S) {
-      const v0 = new Vertex(pixel.XS + O, pixel.YS - O);
-      const v1 = new Vertex(pixel.XS - O, pixel.YS - O);
+      const v0 = NewVertex(pixel.XS + O, pixel.YS - O);
+      const v1 = NewVertex(pixel.XS - O, pixel.YS - O);
       const line = new Linedef(v0, v1);
       pixel.lin_S = line;
       pixel.own_S = true;
@@ -221,8 +225,8 @@ const generateStuffFromimage = function(img: IJimp) {
     }
 
     if (needs_W) {
-      const v0 = new Vertex(pixel.XS - O, pixel.YS - O);
-      const v1 = new Vertex(pixel.XS - O, pixel.YS + O);
+      const v0 = NewVertex(pixel.XS - O, pixel.YS - O);
+      const v1 = NewVertex(pixel.XS - O, pixel.YS + O);
       const line = new Linedef(v0, v1);
       pixel.lin_W = line;
       pixel.own_W = true;
@@ -235,6 +239,7 @@ const generateStuffFromimage = function(img: IJimp) {
     }
   }
 
+  console.log("Building Sectors (1)...");
   for (var pixel of new PixelIterator(img, pixels)) {
     // create sectors and sidedefs for all pxels
     pixel.sector = new Sector(pixel.sprite, 10 * SCALE, 0.5 * SCALE);
@@ -268,12 +273,17 @@ const generateStuffFromimage = function(img: IJimp) {
     }
   }
 
+  console.log("Generating UDMF...");
   const { XS, YS } = transform(0, Math.floor(img.bitmap.height / 2), img);
   const udmfText = generateUDMF(XS, YS);
+  console.log("Saving UDMF...");
+  fs.writeFileSync("temp.txt", udmfText);
   const w = WAD.WAD.read(fs.readFileSync("./base.wad"));
   const mapLump = w.lumps.find(l => l.name === "TEXTMAP");
   mapLump.data = Buffer.from(udmfText, "utf8");
+  console.log("Saving WAD...");
   fs.writeFileSync("hellroads_maps.wad", w.write());
+  console.log("Done!");
 };
 
 Jimp.read("./lvl.png")
