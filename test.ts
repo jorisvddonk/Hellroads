@@ -273,6 +273,69 @@ const generateStuffFromimage = function(img: IJimp) {
     }
   }
 
+  console.log("Optimizing sectors...");
+  let stack = [];
+  let mergestack: [Sector, Sector, Linedef][] = [];
+  for (let linedef of reffables.get(RefType.LINEDEF).values()) {
+    let l = linedef as Linedef;
+    if (l.sideback && l.sidefront) {
+      stack.push(l);
+    }
+  }
+  while (stack.length > 0) {
+    const l = stack.pop();
+    const s1 = l.sidefront.sector;
+    const s2 = l.sideback.sector;
+    if (
+      s1 === sector0 ||
+      s2 === sector0 ||
+      l.deleted ||
+      s1.deleted ||
+      s2.deleted
+    ) {
+      continue;
+    }
+    if (
+      s1.heightceiling === s2.heightceiling &&
+      s1.heightfloor === s2.heightfloor &&
+      s1.texturefloor === s2.texturefloor
+    ) {
+      mergestack.push([s1, s2, l]);
+    }
+  }
+  while (mergestack.length > 0) {
+    const merge = mergestack.pop();
+    const s1 = merge[0];
+    const s2 = merge[1];
+    const l = merge[2];
+    if (s1 === s2) {
+      continue;
+    }
+    for (let sidedef of s2.sidedefs) {
+      sidedef.sector = s1;
+    }
+    l.deleted = true;
+    l.sidefront.deleted = true;
+    l.sideback.deleted = true;
+    s2.deleted = true;
+    for (let x of mergestack) {
+      if (x[0] === s2) {
+        x[0] = s1;
+      }
+      if (x[1] === s2) {
+        x[1] = s1;
+      }
+    }
+  }
+  for (let linedef of reffables.get(RefType.LINEDEF).values()) {
+    let l = linedef as Linedef;
+    if (l.sideback && l.sidefront && l.sideback.sector === l.sidefront.sector) {
+      l.deleted = true;
+      l.sidefront.deleted = true;
+      l.sideback.deleted = true;
+    }
+  }
+
   console.log("Generating UDMF...");
   const { XS, YS } = transform(0, Math.floor(img.bitmap.height / 2), img);
   const udmfText = generateUDMF(XS, YS);

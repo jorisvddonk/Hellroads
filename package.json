@@ -19,6 +19,7 @@
   "homepage": "https://github.com/jorisvddonk/Hellroads#readme",
   "dependencies": {
     "@types/node": "^12.7.3",
+    "iterare": "^1.2.0",
     "jimp": "^0.6.7",
     "node-wad": "^0.2.6"
   },
