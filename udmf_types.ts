@@ -113,7 +113,6 @@ export class Sidedef implements UDMFObject {
 sidedef
 {
 sector = ${this.sector.ref};
-${this.texturemiddle ? `texturemiddle = "${this.texturemiddle}";` : ""}
 ${this.texturemiddle ? `texturebottom = "${this.texturemiddle}";` : ""}
 }
     `;
@@ -151,7 +150,6 @@ export class Sector implements UDMFObject {
 sector
 {
 texturefloor = "${this.texturefloor}";
-textureceiling = "0000";
 heightceiling = ${this.heightceiling};
 heightfloor = ${this.heightfloor};
 }

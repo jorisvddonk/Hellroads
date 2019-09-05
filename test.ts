@@ -120,7 +120,7 @@ const generateStuffFromimage = function(img: IJimp) {
       -img.bitmap.width * SCALE * 1.25,
       -img.bitmap.height * SCALE * 1.25
     ),
-    "0000"
+    "F_SKY1"
   );
 
   const transform = (x: number, y: number, img: IJimp) => {
