@@ -2,7 +2,7 @@ Class SkyroadsPlayer : Doomplayer
 {
   Default {
     Player.startitem "ShipSpawner";
-    Player.startitem "ShipSpawnerAmmo", 1;
+    Player.startitem "ShipSpawnerAmmo", 0;
     +NOGRAVITY;
     +NOCLIP;
     +SOLID;

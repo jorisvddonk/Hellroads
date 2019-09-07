@@ -30,19 +30,19 @@ Class ShipSpawner : Pistol
   States
   {
     Ready:
-      PUNG A 1 A_WeaponReady;
+      TNT1 A 1 A_WeaponReady;
       Loop;
     Deselect:
-      PUNG A 1 A_Lower;
+      TNT1 A 1 A_Lower;
       Loop;
     Select:
-      PUNG A 1 A_Raise;
+      TNT1 A 1 A_Raise;
       Loop;
     Fire:
-      PUNG A 1;
-      PUNG B 1 A_FireCustomMissile("Ship");
-      PUNG A 1 A_CheckReload;
-      PUNG A 1 A_Refire;
+      TNT1 A 1;
+      TNT1 B 1 A_FireCustomMissile("Ship");
+      TNT1 A 1 A_CheckReload;
+      TNT1 A 1 A_Refire;
       Goto Ready;
   }
 }
