@@ -14,6 +14,41 @@ Sprite SKYAD0, 28, 13 {
   Offset 14, 13
   Patch SKYAD0, 0, 0
 }
+
+Sprite SKYFA0, 29, 12 {
+  Offset 14, 12
+  Patch SKYFA0, 0, 0
+}
+Sprite SKYFB0, 29, 12 {
+  Offset 14, 12
+  Patch SKYFB0, 0, 0
+}
+Sprite SKYFC0, 29, 12 {
+  Offset 14, 12
+  Patch SKYFC0, 0, 0
+}
+Sprite SKYFD0, 29, 12 {
+  Offset 14, 12
+  Patch SKYFD0, 0, 0
+}
+
+Sprite SKYJA0, 29, 15 {
+  Offset 14, 15
+  Patch SKYJA0, 0, 0
+}
+Sprite SKYJB0, 29,15 {
+  Offset 14, 15
+  Patch SKYJB0, 0, 0
+}
+Sprite SKYJC0, 29,15 {
+  Offset 14, 15
+  Patch SKYJC0, 0, 0
+}
+Sprite SKYJD0, 29,15 {
+  Offset 14, 15
+  Patch SKYJD0, 0, 0
+}
+
 Sprite SBOOA0, 26, 24 {
   Offset 12,  12
   Patch SBOOA0, 0, 0
