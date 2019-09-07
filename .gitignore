@@ -3,3 +3,6 @@
 node_modules/
 SPRITES/*.png
 test.wad
+temp.txt
+*.log
+skyroads_data/*
