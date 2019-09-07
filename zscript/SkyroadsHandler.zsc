@@ -40,7 +40,7 @@
         ThinkerIterator t = ThinkerIterator.Create("Ship");
         Ship d;
         while (d = Ship(t.Next())) {
-          d.jump();
+          d.mJump(e.Args[0]);
         }
       }
 

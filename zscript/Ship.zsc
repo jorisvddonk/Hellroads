@@ -1,5 +1,4 @@
 class Ship : Actor {
-  bool falling;
   Vector2 movement;
   float throttle;
   float throttleDelta;
@@ -9,6 +8,9 @@ class Ship : Actor {
   bool throttleIncreasing;
   bool throttleDecreasing;
   Vector3 initialPosition;
+  int jump_grace;
+  bool jumping;
+  bool bouncing;
 
   Default {
     +NOGRAVITY;
@@ -23,6 +25,18 @@ class Ship : Actor {
       SKYA B 3;
       SKYA C 3;
       SKYA D 3;
+      loop;
+    Rising:
+      SKYJ A 3;
+      SKYJ B 3;
+      SKYJ C 3;
+      SKYJ D 3;
+      loop;
+    Falling:
+      SKYF A 3;
+      SKYF B 3;
+      SKYF C 3;
+      SKYF D 3;
       loop;
     Kaboom:
       SBOO A 4 A_PlayWeaponSound("SBOOM");
@@ -45,7 +59,8 @@ class Ship : Actor {
     movement = (0,0);
     throttle = 0.0;
     throttleDelta = 0.0;
-    falling = true;
+    bouncing = false;
+    jumping = false;
     forwardAngle = angle;
     movingLeft = false;
     movingRight = false;
@@ -54,56 +69,58 @@ class Ship : Actor {
   }
 
   void mLeft(bool a) {
-    if (InStateSequence(CurState, ResolveState("Ready"))) {
-      movingLeft = a;
-      setMovement();
-    }
+    movingLeft = a;
   }
   void mRight(bool a) {
-    if (InStateSequence(CurState, ResolveState("Ready"))) {
-      movingRight = a;
-      setMovement();
-    }
+    movingRight = a;
+  }
+  void mJump(bool a) {
+    jumping = a;
   }
   void throttleInc(bool a) {
-    if (InStateSequence(CurState, ResolveState("Ready"))) {
-      throttleIncreasing = a;
-      setThrottle();
-    }
+    throttleIncreasing = a;
+    setThrottleDelta();
   }
   void throttleDec(bool a) {
-    if (InStateSequence(CurState, ResolveState("Ready"))) {
-      throttleDecreasing = a;
-      setThrottle();
-    }
+    throttleDecreasing = a;
+    setThrottleDelta();
   }
 
   void setMovement() {
     float xspd = 0;
     if (movingLeft) {
-      xspd -= 5;
+      xspd -= throttle / 20 + 0.5;
     }
     if (movingRight) {
-      xspd += 5;
+      xspd += throttle / 20 + 0.5;
     }
     movement = (xspd, movement.y);
   }
 
-  void setThrottle() {
+  void setThrottleDelta() {
     float throttle = 0;
     if (throttleIncreasing) {
-      throttle += 7;
+      throttle += 4;
     }
     if (throttleDecreasing) {
-      throttle -= 7;
+      throttle -= 4;
     }
     throttleDelta = throttle;
   }
 
   void jump() {
-    if (falling == false) {
-      movement = (movement.x, -15.0);
-      falling = true;
+    jump_grace = 0;
+    bouncing = false;
+    movement = (movement.x, -11.0);
+    SetState(ResolveState("Rising"));
+  }
+
+  void bounce() {
+    if (InStateSequence(CurState, ResolveState("Falling"))) {
+      jump_grace = 0;
+      bouncing = true;
+      movement = (movement.x, -6.0);
+      SetState(ResolveState("Rising"));
     }
   }
   
@@ -116,17 +133,36 @@ class Ship : Actor {
   override void Tick() {
     Super.Tick();
 
+    // can always alter throttle, even when jumping
     throttle = throttle + throttleDelta;
-    if (throttle > 300) {
-      throttle = 300;
+    if (throttle > 100) {
+      throttle = 100;
     }
     if (throttle < 0) {
       throttle = 0;
     }
 
+
+    if (InStateSequence(CurState, ResolveState("Ready"))) {
+      jump_grace = 0;
+    } else {
+      jump_grace = jump_grace + 1;
+      if (jump_grace > 1000) { // not sure if overflow; better be safe
+        jump_grace = 1000;
+      }
+    }
+
+    if (jump_grace < 5) {
+      setMovement();
+    }
+    if (jumping) {
+      if (jump_grace < 5 && bouncing == true || InStateSequence(CurState, ResolveState("Ready"))) {
+        jump();
+      }
+    }
     // Console.Printf("Throttle: %f, ThrottleDelta: %f", throttle, throttleDelta);
 
-    if (falling) {
+    if (InStateSequence(CurState, ResolveState("Rising")) || InStateSequence(CurState, ResolveState("Falling"))) {
       movement = (movement.x, movement.y + 1.6);
     }
 
@@ -154,19 +190,31 @@ class Ship : Actor {
       movement = (min(0, movement.x), 0);
     }
 
-    if (zoffset > -10 && zoffset < movement.y) {
-      movement = (movement.x, 0);
-      SetOrigin((pos.x, pos.y, hitz), true);
-      falling = false;
-    } else if (zoffset > 0.1) {
-      falling = true;
+    if (!InStateSequence(CurState, ResolveState("Kaboom"))) {
+      if (zoffset > -10 && zoffset < movement.y) {
+        if (movement.y > 7) {
+          SetOrigin((pos.x, pos.y, hitz), false); // reset to floor position first
+          bounce();
+        } else {
+          movement = (movement.x, 0);
+          SetOrigin((pos.x, pos.y, hitz), false);
+          SetState(ResolveState("Ready"));
+          setMovement();
+        }
+      } else if (zoffset > 0.1) {
+        if (movement.y < 0) {
+          SetState(ResolveState("Rising"));
+        } else {
+          SetState(ResolveState("Falling"));
+        }
+      }
     }
 
     if (self.pos.z < -0.1) {
       self.kaboom();
     }
 
-    SetOrigin((pos.x + (Sin(forwardAngle) * movement.x) + (Cos(forwardAngle) * throttle / 20), pos.y - (Cos(forwardAngle) * movement.x) + (Sin(forwardAngle) * throttle / 20), pos.z - movement.y), true);
+    SetOrigin((pos.x + (Sin(forwardAngle) * movement.x) + (Cos(forwardAngle) * throttle / 10), pos.y - (Cos(forwardAngle) * movement.x) + (Sin(forwardAngle) * throttle / 10), pos.z - movement.y), false);
 
     PlayerInfo p = players[consoleplayer];
     p.mo.SetOrigin((pos.x - (Cos(forwardAngle) * 200), pos.y - (Sin(forwardAngle) * 200), 40), true);
