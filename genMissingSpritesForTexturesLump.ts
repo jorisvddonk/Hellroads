@@ -1,20 +1,6 @@
 import { writeFileSync } from "fs";
 
-const angles = [
-  "2",
-  "A",
-  "3",
-  "B",
-  "4",
-  "6",
-  "E",
-  "7",
-  "F",
-  "8",
-  "9",
-  "1",
-  "G"
-];
+const angles = ["2", "A", "3", "B", "E", "7", "F", "8", "9", "1", "G"];
 
 const animations = ["A", "F", "J"];
 

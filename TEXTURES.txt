@@ -46,6 +46,38 @@ Sprite SKYADC, 29, 13 {
   Offset 14, 13
   Patch SKYADD, 0, 0 { FlipX }
 }
+Sprite SKYAA6, 29, 13 {
+  Offset 14, 13
+  Patch SKYAA6, 0, 0
+}
+Sprite SKYAB6, 29, 13 {
+  Offset 14, 13
+  Patch SKYAB6, 0, 0
+}
+Sprite SKYAC6, 29, 13 {
+  Offset 14, 13
+  Patch SKYAC6, 0, 0
+}
+Sprite SKYAD6, 29, 13 {
+  Offset 14, 13
+  Patch SKYAD6, 0, 0
+}
+Sprite SKYAA4, 29, 13 {
+  Offset 14, 13
+  Patch SKYAA6, 0, 0 { FlipX }
+}
+Sprite SKYAB4, 29, 13 {
+  Offset 14, 13
+  Patch SKYAB6, 0, 0 { FlipX }
+}
+Sprite SKYAC4, 29, 13 {
+  Offset 14, 13
+  Patch SKYAC6, 0, 0 { FlipX }
+}
+Sprite SKYAD4, 29, 13 {
+  Offset 14, 13
+  Patch SKYAD6, 0, 0 { FlipX }
+}
 
 Sprite SKYFA5, 29, 12 {
   Offset 14, 12
@@ -94,6 +126,38 @@ Sprite SKYFCC, 29, 12 {
 Sprite SKYFDC, 29, 12 {
   Offset 14, 12
   Patch SKYFDD, 0, 0 { FlipX }
+}
+Sprite SKYFA6, 29, 12 {
+  Offset 14, 12
+  Patch SKYFA6, 0, 0
+}
+Sprite SKYFB6, 29, 12 {
+  Offset 14, 12
+  Patch SKYFB6, 0, 0
+}
+Sprite SKYFC6, 29, 12 {
+  Offset 14, 12
+  Patch SKYFC6, 0, 0
+}
+Sprite SKYFD6, 29, 12 {
+  Offset 14, 12
+  Patch SKYFD6, 0, 0
+}
+Sprite SKYFA4, 29, 12 {
+  Offset 14, 12
+  Patch SKYFA6, 0, 0 { FlipX }
+}
+Sprite SKYFB4, 29, 12 {
+  Offset 14, 12
+  Patch SKYFB6, 0, 0 { FlipX }
+}
+Sprite SKYFC4, 29, 12 {
+  Offset 14, 12
+  Patch SKYFC6, 0, 0 { FlipX }
+}
+Sprite SKYFD4, 29, 12 {
+  Offset 14, 12
+  Patch SKYFD6, 0, 0 { FlipX }
 }
 
 Sprite SKYJA5, 29, 15 {
@@ -144,6 +208,38 @@ Sprite SKYJDC, 29,15 {
   Offset 14, 15
   Patch SKYJDD, 0, 0 { FlipX }
 }
+Sprite SKYJA6, 29, 15 {
+  Offset 14, 15
+  Patch SKYJA6, 0, 0
+}
+Sprite SKYJB6, 29,15 {
+  Offset 14, 15
+  Patch SKYJB6, 0, 0
+}
+Sprite SKYJC6, 29,15 {
+  Offset 14, 15
+  Patch SKYJC6, 0, 0
+}
+Sprite SKYJD6, 29,15 {
+  Offset 14, 15
+  Patch SKYJD6, 0, 0
+}
+Sprite SKYJA4, 29, 15 {
+  Offset 14, 15
+  Patch SKYJA6, 0, 0 { FlipX }
+}
+Sprite SKYJB4, 29,15 {
+  Offset 14, 15
+  Patch SKYJB6, 0, 0 { FlipX }
+}
+Sprite SKYJC4, 29,15 {
+  Offset 14, 15
+  Patch SKYJC6, 0, 0 { FlipX }
+}
+Sprite SKYJD4, 29,15 {
+  Offset 14, 15
+  Patch SKYJD6, 0, 0 { FlipX }
+}
 
 Sprite SBOOA0, 26, 24 {
   Offset 12,  12
@@ -188,12 +284,6 @@ Patch EMPTY, 0, 0
 Sprite SKYAAB, 1, 1 {
 Patch EMPTY, 0, 0
 }
-Sprite SKYAA4, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYAA6, 1, 1 {
-Patch EMPTY, 0, 0
-}
 Sprite SKYAAE, 1, 1 {
 Patch EMPTY, 0, 0
 }
@@ -225,12 +315,6 @@ Sprite SKYAB3, 1, 1 {
 Patch EMPTY, 0, 0
 }
 Sprite SKYABB, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYAB4, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYAB6, 1, 1 {
 Patch EMPTY, 0, 0
 }
 Sprite SKYABE, 1, 1 {
@@ -266,12 +350,6 @@ Patch EMPTY, 0, 0
 Sprite SKYACB, 1, 1 {
 Patch EMPTY, 0, 0
 }
-Sprite SKYAC4, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYAC6, 1, 1 {
-Patch EMPTY, 0, 0
-}
 Sprite SKYACE, 1, 1 {
 Patch EMPTY, 0, 0
 }
@@ -303,12 +381,6 @@ Sprite SKYAD3, 1, 1 {
 Patch EMPTY, 0, 0
 }
 Sprite SKYADB, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYAD4, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYAD6, 1, 1 {
 Patch EMPTY, 0, 0
 }
 Sprite SKYADE, 1, 1 {
@@ -344,12 +416,6 @@ Patch EMPTY, 0, 0
 Sprite SKYFAB, 1, 1 {
 Patch EMPTY, 0, 0
 }
-Sprite SKYFA4, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYFA6, 1, 1 {
-Patch EMPTY, 0, 0
-}
 Sprite SKYFAE, 1, 1 {
 Patch EMPTY, 0, 0
 }
@@ -381,12 +447,6 @@ Sprite SKYFB3, 1, 1 {
 Patch EMPTY, 0, 0
 }
 Sprite SKYFBB, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYFB4, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYFB6, 1, 1 {
 Patch EMPTY, 0, 0
 }
 Sprite SKYFBE, 1, 1 {
@@ -422,12 +482,6 @@ Patch EMPTY, 0, 0
 Sprite SKYFCB, 1, 1 {
 Patch EMPTY, 0, 0
 }
-Sprite SKYFC4, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYFC6, 1, 1 {
-Patch EMPTY, 0, 0
-}
 Sprite SKYFCE, 1, 1 {
 Patch EMPTY, 0, 0
 }
@@ -459,12 +513,6 @@ Sprite SKYFD3, 1, 1 {
 Patch EMPTY, 0, 0
 }
 Sprite SKYFDB, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYFD4, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYFD6, 1, 1 {
 Patch EMPTY, 0, 0
 }
 Sprite SKYFDE, 1, 1 {
@@ -500,12 +548,6 @@ Patch EMPTY, 0, 0
 Sprite SKYJAB, 1, 1 {
 Patch EMPTY, 0, 0
 }
-Sprite SKYJA4, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYJA6, 1, 1 {
-Patch EMPTY, 0, 0
-}
 Sprite SKYJAE, 1, 1 {
 Patch EMPTY, 0, 0
 }
@@ -537,12 +579,6 @@ Sprite SKYJB3, 1, 1 {
 Patch EMPTY, 0, 0
 }
 Sprite SKYJBB, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYJB4, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYJB6, 1, 1 {
 Patch EMPTY, 0, 0
 }
 Sprite SKYJBE, 1, 1 {
@@ -578,12 +614,6 @@ Patch EMPTY, 0, 0
 Sprite SKYJCB, 1, 1 {
 Patch EMPTY, 0, 0
 }
-Sprite SKYJC4, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYJC6, 1, 1 {
-Patch EMPTY, 0, 0
-}
 Sprite SKYJCE, 1, 1 {
 Patch EMPTY, 0, 0
 }
@@ -615,12 +645,6 @@ Sprite SKYJD3, 1, 1 {
 Patch EMPTY, 0, 0
 }
 Sprite SKYJDB, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYJD4, 1, 1 {
-Patch EMPTY, 0, 0
-}
-Sprite SKYJD6, 1, 1 {
 Patch EMPTY, 0, 0
 }
 Sprite SKYJDE, 1, 1 {
