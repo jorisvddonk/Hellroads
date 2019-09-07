@@ -12,6 +12,7 @@ import {
   RefType,
   NewVertex
 } from "./udmf_types";
+import { LevelJSON } from "./levelJSON";
 
 const SCALE = 48;
 const CEILINGHEIGHT = 10 * SCALE;
@@ -105,7 +106,7 @@ class PixelIterator implements Iterable<Pixel> {
   }
 }
 
-const generateStuffFromimage = function(img: IJimp) {
+const generateStuffFromimage = function(img: IJimp, levelJSON: LevelJSON) {
   console.log("Generating room0..");
   const sector0 = generateRoom(
     NewVertex(
@@ -137,8 +138,6 @@ const generateStuffFromimage = function(img: IJimp) {
   };
 
   console.log("Scanning image; first pass");
-  let startX = Infinity;
-  let startY = Infinity;
   img.scanQuiet(0, 0, img.bitmap.width, img.bitmap.height, (x, y, idx) => {
     const color = img.getPixelColor(x, y);
     const sprite = getSpriteName(color);
@@ -154,10 +153,6 @@ const generateStuffFromimage = function(img: IJimp) {
         sprite,
         height: 255 - Jimp.intToRGBA(color).a
       });
-      if (x < startX) {
-        startX = x;
-        startY = y;
-      }
     }
   });
 
@@ -352,6 +347,12 @@ const generateStuffFromimage = function(img: IJimp) {
   }
 
   console.log("Generating UDMF...");
+  let startX = 0;
+  let startY = 0;
+  if (levelJSON && levelJSON.playerStart) {
+    startX = levelJSON.playerStart.x;
+    startY = levelJSON.playerStart.y;
+  }
   const { XS, YS } = transform(startX, startY, img);
   const udmfText = generateUDMF(XS, YS);
   console.log("Saving UDMF...");
@@ -364,27 +365,34 @@ const generateStuffFromimage = function(img: IJimp) {
   console.log("Done!");
 };
 
-Jimp.read("./lvls/lvl2.png")
-  .then(async img => {
-    const colors = new Set();
-    img.scanQuiet(0, 0, img.bitmap.width, img.bitmap.height, (x, y, idx) => {
-      const color = img.getPixelColor(x, y);
-      colors.add(color);
-    });
+const writeMap = mapFileBase => {
+  Jimp.read(`${mapFileBase}.png`)
+    .then(async img => {
+      const colors = new Set();
+      img.scanQuiet(0, 0, img.bitmap.width, img.bitmap.height, (x, y, idx) => {
+        const color = img.getPixelColor(x, y);
+        colors.add(color);
+      });
 
-    await Promise.all(
-      Array.from(colors).map((color: number) => {
-        Jimp.create(16, 16, color)
-          .then(img => {
-            return img.writeAsync(`./SPRITES/${getSpriteName(color)}.png`);
-          })
-          .catch(console.error);
-      })
-    );
+      await Promise.all(
+        Array.from(colors).map((color: number) => {
+          Jimp.create(16, 16, color)
+            .then(img => {
+              return img.writeAsync(`./SPRITES/${getSpriteName(color)}.png`);
+            })
+            .catch(console.error);
+        })
+      );
 
-    generateStuffFromimage(img);
-  })
-  .catch(console.error);
+      const levelJSON: LevelJSON = JSON.parse(
+        fs.readFileSync(`${mapFileBase}.json`).toString()
+      );
+      generateStuffFromimage(img, levelJSON);
+    })
+    .catch(console.error);
+};
+
+writeMap("./lvls/lvl2");
 
 const generateRoom = (
   v0: Vertex,
