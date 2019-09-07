@@ -66,6 +66,9 @@ class Ship : Actor {
     movingRight = false;
     throttleIncreasing = false;
     throttleDecreasing = false;
+
+    PlayerInfo p = players[consoleplayer];
+    p.mo.SetOrigin((pos.x - (Cos(forwardAngle) * 150), pos.y - (Sin(forwardAngle) * 150), 40), false);
   }
 
   void mLeft(bool a) {
@@ -217,6 +220,6 @@ class Ship : Actor {
     SetOrigin((pos.x + (Sin(forwardAngle) * movement.x) + (Cos(forwardAngle) * throttle / 10), pos.y - (Cos(forwardAngle) * movement.x) + (Sin(forwardAngle) * throttle / 10), pos.z - movement.y), false);
 
     PlayerInfo p = players[consoleplayer];
-    p.mo.SetOrigin((pos.x - (Cos(forwardAngle) * 200), pos.y - (Sin(forwardAngle) * 200), 40), true);
+    p.mo.SetOrigin((p.mo.pos.x + (Cos(forwardAngle) * throttle / 10), p.mo.pos.y + (Sin(forwardAngle) * throttle / 10), 40), false);
   }
 }
