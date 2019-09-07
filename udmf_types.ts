@@ -24,7 +24,7 @@ export enum RefType {
   SIDEDEF = "SIDEDEF"
 }
 
-export const reffables: Map<RefType, UDMFObject[]> = new Map();
+let reffables: Map<RefType, UDMFObject[]> = new Map();
 const mkRef = (type: RefType, r: UDMFObject) => {
   const exist = reffables.get(type);
   let refs = [];
@@ -34,14 +34,22 @@ const mkRef = (type: RefType, r: UDMFObject) => {
   refs.push(r);
   reffables.set(type, refs);
 };
+export function getReffables() {
+  return reffables;
+}
 
 const getRef = (type: RefType, r: UDMFObject) => {
   return reffables.get(type).indexOf(r);
 };
 
+export function resetMapData() {
+  reffables = new Map();
+  vertexMap = new Map<String, Vertex>();
+}
+
 ////////
 
-const vertexMap = new Map<String, Vertex>();
+let vertexMap = new Map<String, Vertex>();
 export function NewVertex(x: number, y: number) {
   const key = `${x}/${y}`;
   const existing = vertexMap.get(key);

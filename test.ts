@@ -8,11 +8,15 @@ import {
   Sidedef,
   Linedef,
   Vertex,
-  reffables,
+  getReffables,
   RefType,
-  NewVertex
+  NewVertex,
+  resetMapData
 } from "./udmf_types";
 import { LevelJSON } from "./levelJSON";
+import { basename } from "path";
+import * as glob from "glob";
+import * as async from "async";
 
 const SCALE = 48;
 const CEILINGHEIGHT = 10 * SCALE;
@@ -49,21 +53,6 @@ interface Pixel {
   sid_W?: Sidedef;
 }
 
-const pixels: Map<number, Map<number, Pixel>> = new Map();
-const getPixel = (x: number, y: number) => {
-  let M = pixels.get(y);
-  if (M !== undefined) {
-    return M.get(x);
-  }
-};
-const addPixel = (pixel: Pixel) => {
-  let M = pixels.get(pixel.y);
-  if (M === undefined) {
-    M = new Map();
-  }
-  M.set(pixel.x, pixel);
-  pixels.set(pixel.y, M);
-};
 class PixelIterator implements Iterable<Pixel> {
   constructor(
     public img: IJimp,
@@ -106,7 +95,29 @@ class PixelIterator implements Iterable<Pixel> {
   }
 }
 
-const generateStuffFromimage = function(img: IJimp, levelJSON: LevelJSON) {
+const generateMapAndAddToWad = function(
+  img: IJimp,
+  levelJSON: LevelJSON,
+  mapname: string,
+  wad
+) {
+  console.log("initializing...");
+  const pixels: Map<number, Map<number, Pixel>> = new Map();
+  const getPixel = (x: number, y: number) => {
+    let M = pixels.get(y);
+    if (M !== undefined) {
+      return M.get(x);
+    }
+  };
+  const addPixel = (pixel: Pixel) => {
+    let M = pixels.get(pixel.y);
+    if (M === undefined) {
+      M = new Map();
+    }
+    M.set(pixel.x, pixel);
+    pixels.set(pixel.y, M);
+  };
+  resetMapData();
   console.log("Generating room0..");
   const sector0 = generateRoom(
     NewVertex(
@@ -286,6 +297,7 @@ const generateStuffFromimage = function(img: IJimp, levelJSON: LevelJSON) {
   console.log("Optimizing sectors...");
   let stack = [];
   let mergestack: [Sector, Sector, Linedef][] = [];
+  const reffables = getReffables();
   for (let linedef of reffables.get(RefType.LINEDEF).values()) {
     let l = linedef as Linedef;
     if (l.sideback && l.sidefront) {
@@ -357,42 +369,65 @@ const generateStuffFromimage = function(img: IJimp, levelJSON: LevelJSON) {
   const udmfText = generateUDMF(XS, YS);
   console.log("Saving UDMF...");
   fs.writeFileSync("temp.txt", udmfText);
-  const w = WAD.WAD.read(fs.readFileSync("./base.wad"));
-  const mapLump = w.lumps.find(l => l.name === "TEXTMAP");
-  mapLump.data = Buffer.from(udmfText, "utf8");
-  console.log("Saving WAD...");
-  fs.writeFileSync("hellroads_maps.wad", w.write());
-  console.log("Done!");
+  wad.addLump(mapname, null);
+  //const mapLump = wad.lumps.find(l => l.name === "TEXTMAP");
+  //mapLump.data = Buffer.from(udmfText, "utf8");
+  wad.addLump("TEXTMAP", Buffer.from(udmfText, "utf8"));
+  wad.addLump("BEHAVIOR", null);
+  wad.addLump("ENDMAP", null);
+  console.log("Done with map!");
 };
 
-const writeMap = mapFileBase => {
-  Jimp.read(`${mapFileBase}.png`)
-    .then(async img => {
-      const colors = new Set();
-      img.scanQuiet(0, 0, img.bitmap.width, img.bitmap.height, (x, y, idx) => {
-        const color = img.getPixelColor(x, y);
-        colors.add(color);
-      });
+const writeMap = (mapFileBase: string, wad) => {
+  return Jimp.read(`${mapFileBase}.png`).then(async img => {
+    const colors = new Set();
+    img.scanQuiet(0, 0, img.bitmap.width, img.bitmap.height, (x, y, idx) => {
+      const color = img.getPixelColor(x, y);
+      colors.add(color);
+    });
 
-      await Promise.all(
-        Array.from(colors).map((color: number) => {
-          Jimp.create(16, 16, color)
-            .then(img => {
-              return img.writeAsync(`./SPRITES/${getSpriteName(color)}.png`);
-            })
-            .catch(console.error);
-        })
-      );
+    await Promise.all(
+      Array.from(colors).map((color: number) => {
+        Jimp.create(16, 16, color)
+          .then(img => {
+            return img.writeAsync(`./SPRITES/${getSpriteName(color)}.png`);
+          })
+          .catch(console.error);
+      })
+    );
 
-      const levelJSON: LevelJSON = JSON.parse(
-        fs.readFileSync(`${mapFileBase}.json`).toString()
-      );
-      generateStuffFromimage(img, levelJSON);
-    })
-    .catch(console.error);
+    const levelJSON: LevelJSON = JSON.parse(
+      fs.readFileSync(`${mapFileBase}.json`).toString()
+    );
+    generateMapAndAddToWad(
+      img,
+      levelJSON,
+      basename(mapFileBase).toUpperCase(),
+      wad
+    );
+  });
 };
 
-writeMap("./lvls/lvl2");
+const wad = new WAD.WAD();
+const mapImports = [];
+for (let jsonfileName of glob.sync("./lvls/**.json")) {
+  let mapBase = jsonfileName.replace(".json", "");
+  mapImports.push(callback => {
+    writeMap(mapBase, wad)
+      .then(() => callback(null, "OK"))
+      .catch(e => callback(e));
+  });
+}
+async.series(mapImports, (err, results) => {
+  if (err) {
+    console.error(err);
+  } else {
+    console.log("Done generating maps..");
+    console.log("Saving WAD...");
+    fs.writeFileSync("hellroads_maps.wad", wad.write());
+    console.log("Done with wad! Have fun!");
+  }
+});
 
 const generateRoom = (
   v0: Vertex,

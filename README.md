@@ -6,7 +6,7 @@ A Skyroads clone for (G)ZDoom.
 
 Simply make a checkout of this git repository, then run:
 
-`gzdoom -iwad PATH_TO_DOOM_IWAD +map map01 -file "./hellroads_maps.wad" -file "./"`
+`gzdoom -iwad PATH_TO_DOOM_IWAD +map lvl1 -file "./hellroads_maps.wad" -file "./"`
 
 Check the keybindings, as you'll have to assign custom keybinds!
 
