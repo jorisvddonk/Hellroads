@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "ts-node test.ts"
+    "build": "ts-node test.ts",
+    "convert": "ts-node from_skyroads.ts"
   },
   "repository": {
     "type": "git",
