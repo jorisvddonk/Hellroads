@@ -364,7 +364,7 @@ const generateStuffFromimage = function(img: IJimp) {
   console.log("Done!");
 };
 
-Jimp.read("./lvl25.png")
+Jimp.read("./lvls/lvl2.png")
   .then(async img => {
     const colors = new Set();
     img.scanQuiet(0, 0, img.bitmap.width, img.bitmap.height, (x, y, idx) => {
