@@ -13,6 +13,9 @@ import {
   NewVertex
 } from "./udmf_types";
 
+const SCALE = 48;
+const CEILINGHEIGHT = 10 * SCALE;
+
 const getSpriteName = (color: number) => {
   const rgba = Jimp.intToRGBA(color);
   const getCol = i =>
@@ -29,6 +32,7 @@ interface Pixel {
   YS: number;
   color: number;
   sprite: string;
+  height: number;
   lin_N?: Linedef;
   lin_E?: Linedef;
   lin_S?: Linedef;
@@ -133,6 +137,8 @@ const generateStuffFromimage = function(img: IJimp) {
   };
 
   console.log("Scanning image; first pass");
+  let startX = Infinity;
+  let startY = Infinity;
   img.scanQuiet(0, 0, img.bitmap.width, img.bitmap.height, (x, y, idx) => {
     const color = img.getPixelColor(x, y);
     const sprite = getSpriteName(color);
@@ -145,8 +151,13 @@ const generateStuffFromimage = function(img: IJimp) {
         XS,
         YS,
         color,
-        sprite
+        sprite,
+        height: 255 - Jimp.intToRGBA(color).a
       });
+      if (x < startX) {
+        startX = x;
+        startY = y;
+      }
     }
   });
 
@@ -242,7 +253,11 @@ const generateStuffFromimage = function(img: IJimp) {
   console.log("Building Sectors (1)...");
   for (var pixel of new PixelIterator(img, pixels)) {
     // create sectors and sidedefs for all pxels
-    pixel.sector = new Sector(pixel.sprite, 10 * SCALE, 0.5 * SCALE);
+    pixel.sector = new Sector(
+      pixel.sprite,
+      CEILINGHEIGHT,
+      (pixel.height / 150) * SCALE
+    );
     pixel.sid_N = new Sidedef(pixel.sector, pixel.sprite);
     pixel.sid_E = new Sidedef(pixel.sector, pixel.sprite);
     pixel.sid_S = new Sidedef(pixel.sector, pixel.sprite);
@@ -337,7 +352,7 @@ const generateStuffFromimage = function(img: IJimp) {
   }
 
   console.log("Generating UDMF...");
-  const { XS, YS } = transform(0, Math.floor(img.bitmap.height / 2), img);
+  const { XS, YS } = transform(startX, startY, img);
   const udmfText = generateUDMF(XS, YS);
   console.log("Saving UDMF...");
   fs.writeFileSync("temp.txt", udmfText);
@@ -349,7 +364,7 @@ const generateStuffFromimage = function(img: IJimp) {
   console.log("Done!");
 };
 
-Jimp.read("./lvl.png")
+Jimp.read("./lvl25.png")
   .then(async img => {
     const colors = new Set();
     img.scanQuiet(0, 0, img.bitmap.width, img.bitmap.height, (x, y, idx) => {
@@ -371,7 +386,6 @@ Jimp.read("./lvl.png")
   })
   .catch(console.error);
 
-const SCALE = 32;
 const generateRoom = (
   v0: Vertex,
   v1: Vertex,
@@ -380,7 +394,7 @@ const generateRoom = (
   texture: string,
   heightfloor?: number
 ) => {
-  const s0 = new Sector(texture, 10 * SCALE, -1 * SCALE);
+  const s0 = new Sector(texture, CEILINGHEIGHT, -0.2 * SCALE);
   const side1 = new Sidedef(s0, texture);
   const side2 = new Sidedef(s0, texture);
   const side3 = new Sidedef(s0, texture);
