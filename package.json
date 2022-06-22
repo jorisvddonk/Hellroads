@@ -20,7 +20,7 @@
   "homepage": "https://github.com/jorisvddonk/Hellroads#readme",
   "dependencies": {
     "@types/node": "^12.7.3",
-    "async": "^3.1.0",
+    "async": "^3.2.2",
     "glob": "^7.1.4",
     "iterare": "^1.2.0",
     "jimp": "^0.6.7",
